@@ -307,7 +307,7 @@ nav {
 
 .p1 {
     position: relative;
-    top: 15px;
+    top: -5px;
     font-size: 1rem;
     font-weight: 400;
     width: 500px;
@@ -749,4 +749,158 @@ img {vertical-align: middle;}
     top: 73%;
     font-weight: 100;
     color: #1a1a1a;
+}
+
+@media(max-width: 995px) {
+    .Home {
+        top: 30%;
+        right: 45%;
+        font-size: 15px;
+    }
+
+    .fa-house {
+        font-size: 15px;
+    }
+
+    .fa-house span {
+        left: 21px;
+        font-size: 15px;
+    }
+
+    .fa-house:hover::after {
+        width: 67px;
+    }
+
+    .Details {
+        top: 30%;
+        right: 25%;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 15px;
+    }
+
+    .fa-magnifying-glass span {
+        left: 20px;
+        font-size: 15px;
+    }
+
+    .fa-magnifying-glass:hover::after {
+        width: 73px;
+    }
+
+    .Gallery {
+        top: 45%;
+        right: 41%;
+    }
+
+    .fa-image {
+        font-size: 15px;
+    }
+
+    .fa-image span {
+        font-size: 15px;
+        left: 21px;
+    }
+
+    .fa-image:hover::after {
+        width: 70px;
+    }
+
+    .Contact {
+        top: 62%;
+        right: 24.5%;
+    }
+
+    .fa-feather {
+        font-size: 15px;
+    }
+
+    .fa-feather span{
+        font-size: 15px;
+        left: 20px;
+    }
+
+    .fa-feather:hover::after {
+        width: 80px;
+    }
+
+    .Nadpis-H {
+        top: 0px;
+        left: 30%;
+    }
+
+    .Home-bakcground {
+        height: 1300px;
+    }
+
+    .Info1 {
+        left: 5%;
+        top: 120px;
+        width: 340px;
+        overflow-x: hidden;
+    }
+    .p1 {
+        width: 450px;
+    }
+    .Info2 {
+        left: 5%;
+        width: 340px;
+        top: 400px;
+    }
+
+    .Info4 {
+        top: 700px;
+        width: 340px;
+        left: 5%;
+    }
+
+    .Info3 {
+        top: 1000px;
+        width: 340px;
+        left: 5%;
+    }
+    .GalleryBackground {
+        top: 1600px;
+    }
+    .gal-31-10-24 {
+        left: 0;
+        width: 300px;
+    }
+
+    .Contact-background {
+        top: 2100px;
+    }
+    .sendmail {
+        left: 30%;
+        width: 150px;
+    }
+
+    .a-fa-instagram {
+        left: 5%;
+    }
+
+    .a-fa-whatsapp {
+        left: 75%;
+    }
+    .copyright-background {
+        top: 2350px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .copyright-all-right-reserved {
+        left: 15%;
+    }
+    .Copyright-email {
+        left: 25%;
+    }
+
+    .Copyright-creator {
+        left: 23%;
+    }
+
+    .Copyright-assist {
+        left: 30%;
+    }
 }
