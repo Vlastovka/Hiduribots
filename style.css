@@ -354,7 +354,7 @@ nav {
     justify-items: center;
     text-align: center;
     top: 57%;
-    right: 5%;
+    left: 33.5%;
     border-radius: 25px;
     border:3px solid var(--main-shadow-color);
     cursor: pointer;
@@ -373,39 +373,6 @@ nav {
 }
 
 .p3 {
-    position: relative;
-    top: 15px;
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-.Info4 {
-    position: absolute;
-    width: 500px;
-    height: 250px;
-    background-color: transparent;
-    justify-items: center;
-    text-align: center;
-    top: 57%;
-    left: 5%;
-    border-radius: 25px;
-    border:3px solid var(--main-shadow-color);
-    cursor: pointer;
- }
-
-.Info4:hover {
-    transform: scale(1.04) translateY(-5px);
-    background-color: var(--main-shadow-color);
-    box-shadow: 0px 0px 25px var(--main-shadow-color);
- }
-
-.h24 {
-    position: relative;
-    top: 5px;
-    font-size: 1.5rem;
-}
-
-.p4 {
     position: relative;
     top: 15px;
     font-size: 1.1rem;
@@ -538,6 +505,88 @@ img {vertical-align: middle;}
     left: 18.5%;
 }
 
+.mySlides1 {display: none}
+
+.slideshow-container1 {
+  max-width: 440px;
+  position: absolute;
+  margin: 0;
+  left: 60%;
+  top: 19%;
+  border: 4px solid var(--main-background-color);
+}
+
+.prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  font-size: 30px
+}
+
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev1:hover, .next1:hover {
+  background-color: rgba(56, 56, 56, 0.8);
+}
+
+.numbertext1 {
+  color: #272727;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot1 {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  position: relative;
+  top: 40px;
+  left: 370px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active1, .dot1:hover {
+  background-color: var(--hover-background-color);
+}
+
+.fade1 {
+  animation-name: fade1;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade1 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.Nadpis-7-11-24 {
+    position: absolute;
+    top: 12.5%;
+    right: 22.5%;
+}
+
 #Contact {
     position: absolute;
     top: 2000px;
@@ -637,7 +686,7 @@ img {vertical-align: middle;}
 .a-fa-whatsapp {
     position: absolute;
     top: 36.5%;
-    left: 59%;
+    left: 57%;
     width: 75px;
     height: 75px;
     border-radius: 50px;
@@ -685,73 +734,74 @@ img {vertical-align: middle;}
     position: relative;
     left: 10px;
     color: #757575;
+    transition: 500ms;
+}
+
+.fa-envelope:hover {
+    color: #f2f2f2;
 }
 
 .fa-github {
     position: relative;
     color: #757575;
     left: 2px;
+    transition: 500ms;
 }
 
-.Copyright-assist {
-    position: absolute;
-    color: #757575;
-    top: 32%;
-    left: 43.5%;
-    font-size: 15px;
+.fa-github:hover {
+    color: #f2f2f2;
 }
 
 .s0 {
     position: relative;
-    top: 0px;
-    left: px;
+    top: -15px;
+    left: 15%;
 }
 
 .s1 {
-    position: absolute;
-    top: 20px;
-    left: 175px;
+    position: relative;
+    top: 10px;
+    right: 30%;
 }
 
 .s2 {
-    position: absolute;
-    top: 40px;
-    left: 0px;
+    position: relative;
+    top: 11px;
+    left: 9%;
+    width: 200px;
+}
+
+.s2-2 {
+    position: relative;
+    top: 32px;
+    left: -40%;
 }
 
 .s3 {
-    position: absolute  ;
-    top: 80px;
-    left: 50px;
+    position: relative  ;
+    top: 32px;
+    left: 10%;
 }
 
 .s4 {
     position: absolute;
-    top: 100px;
-    left: 130px;
+    top: 170px;
+    left: 30%;
 }
 
 .s5 {
     position: absolute;
-    top: 120px;
-    left: 160px;
+    top: 190px;
+    left: 35%;
 }
 
 .s6 {
     position: absolute;
-    top: 140px;
-    left: 190px;
+    top: 210px;
+    left: 28%;
 }
 
-.easter-egg {
-    position: absolute;
-    font-size: 10px;
-    top: 73%;
-    font-weight: 100;
-    color: #1a1a1a;
-}
-
-@media(max-width: 995px) {
+@media(max-width: 1250px) {
     .Home {
         top: 30%;
         right: 45%;
@@ -831,37 +881,30 @@ img {vertical-align: middle;}
     }
 
     .Home-bakcground {
-        height: 1300px;
+        height: 1000px;
     }
 
     .Info1 {
         left: 5%;
         top: 120px;
-        width: 340px;
+        width: 90%;
+        height: 280px;
         overflow-x: hidden;
-    }
-    .p1 {
-        width: 450px;
-    }
+        }
     .Info2 {
         left: 5%;
-        width: 340px;
-        top: 400px;
-    }
-
-    .Info4 {
-        top: 700px;
-        width: 340px;
-        left: 5%;
+        width: 90%;
+        top: 420px;
     }
 
     .Info3 {
-        top: 1000px;
-        width: 340px;
+        top: 690px;
+        width: 90%;
         left: 5%;
     }
+
     .GalleryBackground {
-        top: 1600px;
+        top: 1300px;
     }
     .gal-31-10-24 {
         left: 0;
@@ -903,4 +946,103 @@ img {vertical-align: middle;}
     .Copyright-assist {
         left: 30%;
     }
+    .s0 {
+        left: 0%;
+    }
+    .s1 {
+        top: 27%;
+        left: 32%;
+        width: 150px;
+        position: absolute;
+    }
+    .s2 {
+        top: 34%;
+        left: 2%;
+        width: 95%;
+        position: absolute;
+    }
+    .s2-2 {
+        position: absolute;
+        top: 42%;
+        left: 40%;
+    }
+    .s3 {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        width: 90%;
+    }
+    .s4 {
+        position: absolute;
+        top: 57%;
+        width: 350px;
+        left: 10%;
+    }
+    .s5 {
+        position: absolute;
+        left: 30%;
+    }
+    .s6 {
+        position: absolute;
+        left: 20%;
+    }
+    .slideshow-container1{
+        top: 50%;
+        width: 70%;
+        left: 15%;
+    }
+
+    .Nadpis-31-10-24 {
+        top: 11%;
+        left: 43%;
+    }
+
+    .Nadpis-7-11-24 {
+        top: 46%;
+        left: 45%;
+    }
+
+    .slideshow-container{
+        position: absolute;
+        top: 15%;
+        width: 70%;
+        left: 15%;
+    }
+
+    .GalleryBackground {
+        height: 1200px;
+    }
+    .Contact-background {
+        top: 2300px;
+    }
+    .doesntwork {
+        left: 20%;
+    }
+    .copyright-background {
+        top: 2600px;
+     }
+     .copyright-all-right-reserved {
+        left: 22%;
+     }
+     .Copyright-email {
+        left: 30%;
+     }
+     .Copyright-creator {
+        left: 28%;
+     }
+     .Nadpis-G {
+        left: 35%;
+     }
+     .Nadpis-C {
+        left: 40%;        
+     }
+     .sendmail {
+        left: 35%;
+     }
+     .a-fa-instagram {
+        left: 15%;
+     }
+     .Nadpis-H {
+        left: 35%;
+     }
 }
