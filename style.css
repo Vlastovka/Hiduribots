@@ -802,6 +802,9 @@ img {vertical-align: middle;}
 }
 
 @media(max-width: 1250px) {
+    body {
+        oveflow-x: hidden;
+    {
     .Home {
         top: 30%;
         right: 45%;
