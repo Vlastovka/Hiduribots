@@ -948,41 +948,42 @@ img {vertical-align: middle;}
         top: 20%;
         left: 0%;
         width: 98%;
+        position: absolute
     }
     .s1 {
         top: 35%;
-        left: 0%;
+        left: -20%;
         width: 98%;
         position: absolute;
     }
     .s2 {
         top: 50%;
-        left: 0%;
+        left: -20%;
         width: 98%;
         position: absolute;
     }
     .s3 {
         position: absolute;
         top: 80%;
-        left: 0%;
+        left: -20%;
         width: 98%;
     }
     .s4 {
         position: absolute;
         top: 95%;
         width: 98%;
-        left: 0%;
+        left: -20%;
     }
     .s5 {
         position: absolute;
         top: 110%;
-        left: 0%;
+        left: -20%;
         width: 98%;
     }
     .s6 {
         position: absolute;
         top: 125%;
-        left: 0%;
+        left:-20%;
         width: 98%;
     }
     .slideshow-container1{
