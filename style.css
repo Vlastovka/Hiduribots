@@ -958,32 +958,32 @@ img {vertical-align: middle;}
     }
     .s2 {
         top: 50%;
-        left: -20%;
+        left: 0%;
         width: 98%;
         position: absolute;
     }
     .s3 {
         position: absolute;
         top: 80%;
-        left: -20%;
+        left: 0%;
         width: 98%;
     }
     .s4 {
         position: absolute;
-        top: 95%;
+        top: 95%;   
         width: 98%;
-        left: -20%;
+        left: 0%;
     }
     .s5 {
         position: absolute;
         top: 110%;
-        left: -20%;
+        left: 0%;
         width: 98%;
     }
     .s6 {
         position: absolute;
         top: 125%;
-        left:-20%;
+        left: 0%;
         width: 98%;
     }
     .slideshow-container1{
