@@ -1,1057 +1,236 @@
-:root {
-    /*
-        Text colors
-    */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2e29afbbfe.js" crossorigin="anonymous"></script>
+    <link rel="Website icon" href="Hiduribots_-_black_-_Smaller bez pozadi.png">
+    <title>Hiduribots</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html" class="Nadpis"><img src="Hiduribots_-_white_-_smaller-removebg-preview.png" class="Logo">Hiduribots</a>
+            <a href="index.html" class="Home"><i class="fa-solid fa-house"><span>Home</span></i></a>
+            <a href="#Details" class="Details"><i class="fa-solid fa-magnifying-glass"><span>Details</span></i></a>
+            <a href="#Gallery" class="Gallery"><i class="fa-solid fa-image"><span>Gallery</span></i></a>
+            <a href="#Contact" class="Contact"><i class="fa-solid fa-feather"><span>Contact</span></i></a>
+        </ul>
+    </nav>
+    <h3 class="MobileZdedatobrazek">Zde dát obrázek inteligentního týmu</h3>
+    <img src="zdedatobrazek2.png" class="zdedatobrazek">
+    <section id="Details">
+    </section>
+    <section>
+        <div class="Home-bakcground">
+            <h2 class="Nadpis-H">Hiduribots</h2>
+          <div class="Kartypromobil">
+            <div class="Info1">
+                <h2 class="h21">Team members</h2>
+                <span class="s0">Coaches: Pecková Nikola, Pechková Kateřina</span> 
+                <span class="s1">Leaders: Karásek Petr </span>
+                <span class="s2">Programators: Legeza Bruno, Stejskal Jan, Zajíček Dominik, </span>
+                <span class="s2-2">Policer Vojta</span>
+                <span class="s3">Engineer: Holbík Petr, Komínek Štěpán, Hudák Kryštof </span>
+                <span class="s4">Driver: Konejl Jakub, Malec Lukáš,</span>
+                <span class="s5">Photograph: Sak Ondřej, Třešňák Martin</span>
+                <span class="s6">PR: Danyi Matěj, Holovská Daniela</span>
+            </div>
+            <div class="Info2">
+                <h2 class="h22">Victories</h2>
+                <p class="p2">
+                  We haven't participated in any competitions yet.
+                </p>
+            </div>
+            <div class="Info3">
+                <h2 class="h23">About us</h2>
+                <p class="p3">
+                  Our team was founded 31th of october 2024. Our coach 2024. We are pupils of secondary school ZS&MS Jižní.
+                </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="Gallery">
+    </section>
+    <section>
+        <div class="GalleryBackground">
+            <h2 class="Nadpis-G">Photo Gallery</h2>
+            <div class="gal-31-10-24">
+                <h1 class="Nadpis-31-10-24">31.10.2024</h1>
+                <div class="slideshow-container">
 
-    /* Basic color */ --text-color: #fff;
-    /* Second color*/ --second-color: #e6cca6;
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 5</div>
+                      <img src="photogallery/31-10-24-1.png" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="photogallery/31-10-24-2.png" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 5</div>
+                      <img src="photogallery/31-10-24-3.png" style="width:100%">
+                      <div class="text"></div>
+                    </div>
 
-    /* 
-        Background colors
-    */
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="photogallery/31-10-24-4.png" style="width:100%">
+                        <div class="text"></div>
+                      </div>
 
-    /* Main background color */ --main-background-color: #1a1a1a;
-    /* Second background color */ --second-background-color: #232121;
-    /* Hover background color */ --hover-background-color: #e6c89b;
+                      <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="photogallery/31-10-24-5.png" style="width:100%">
+                        <div class="text"></div>
+                      </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">⇦</a>
+                    <a class="next" onclick="plusSlides(1)">⇨</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                      <span class="dot" onclick="currentSlide(5)"></span> 
+                    </div>
+            </div>
+            <div class="gal-7-11-24">
+              <h1 class="Nadpis-7-11-24">7.11.2024</h1>
+              <div class="slideshow-container1">
 
-    /*
-        Shadow colors
-    */
+                  <div class="mySlides1 fade1">
+                    <div class="numbertext1">1 / 5</div>
+                    <img src="photogallery/7-11-24-1.png" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  
+                  <div class="mySlides1 fade1">
+                    <div class="numbertext1">2 / 5</div>
+                    <img src="photogallery/7-11-24-2.png" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  
+                  <div class="mySlides1 fade1">
+                    <div class="numbertext1">3 / 5</div>
+                    <img src="photogallery/7-11-24-3.png" style="width:100%">
+                    <div class="text"></div>
+                  </div>
 
-    /* Main shadow color */ --main-shadow-color: #2d2d2d;
-    /* Light shadow color */ --light-shadow-color: #cecece;
+                  <div class="mySlides1 fade1">
+                      <div class="numbertext1">4 / 5</div>
+                      <img src="photogallery/7-11-24-4.png" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides1 fade1">
+                      <div class="numbertext1">5 / 5</div>
+                      <img src="photogallery/7-11-24-5.png" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                  
+                  <a class="prev1" onclick="plusSlides1(-1)">⇦</a>
+                  <a class="next1" onclick="plusSlides1(1)">⇨</a>
+                  
+                  </div>
+                  <br>
+                  
+                  <div style="text-align:center">
+                    <span class="dot1" onclick="currentSlide1(1)"></span> 
+                    <span class="dot1" onclick="currentSlide1(2)"></span> 
+                    <span class="dot1" onclick="currentSlide1(3)"></span> 
+                    <span class="dot1" onclick="currentSlide1(4)"></span> 
+                    <span class="dot1" onclick="currentSlide1(5)"></span> 
+                  </div>
+          </div>
+        </div>
+    </section>
+        <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-* {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--text-color);
-    font-size: 1rem;
-    text-decoration: none;
-    transition: 500ms;
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    background-color: var(--main-background-color);
-    overflow-x: hidden;
-}
-
-nav {
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 75px;
-    background-color: var(--second-background-color);
-    box-shadow: 0px 5px 40px var(--main-shadow-color);
-}
-
-.Logo {
-    position: absolute;
-    width: 50px;
-    top: -10px;
-    left: -55px;
-    font-weight: 600;
-}
-
-.Nadpis {
-    position: absolute;
-    left: 10%;
-    font-size: 2rem;
-    top: 25%;
-    font-weight: 600;
-    color: #e6c89b;
-}
-
-.Home {
-    position: absolute;
-    right: 45%;
-    top: 40%;
-    font-size: 1.5rem;
-    transition: 500ms;
-}
-
-.fa-house::after {
-    position: absolute;
-    content: '';
-    background-color: var(--hover-background-color);
-    box-shadow: 0px 0px 10px var(--hover-background-color);
-    width: 0%;
-    height: 3px;
-    border-radius: 5px;
-    left: 0%;
-    top: 110%;
-    transition: 500ms;
-}
-
-.fa-house:hover::after {
-    width: 90px;
-}
-
-.fa-house span:hover, .fa-house:hover {
-    color: var(--second-color);
-}
-
-.fa-house {
-    position: absolute;
-    left: -2px;
-    top: -3px;
-    font-size: 1.4rem;
-    max-width: max-content;
-}
-
-.fa-house span {
-    position: absolute;
-    left: 28px;
-    top: 0px;
-    font-size: 1.4rem;
-}
-
-.Details {
-    position: absolute;
-    top: 40%;
-    right: 36%;
-    font-size: 1.5rem;  
-}
-
-.fa-magnifying-glass::after {
-    position: absolute;
-    content: '';
-    background-color: var(--hover-background-color);
-    box-shadow: 0px 0px 10px var(--hover-background-color);
-    width: 0%;
-    height: 3px;
-    border-radius: 5px;
-    left: 0%;
-    top: 110%;
-    transition: 500ms;
-}
-
-.fa-magnifying-glass:hover::after {
-    width: 105px;
-}
-
-.fa-magnifying-glass span:hover, .fa-magnifying-glass:hover {
-    color: var(--second-color);
-}
-
-.fa-magnifying-glass {
-    position: absolute;
-    left: -2px;
-    top: -3px;
-    font-size: 1.4rem;
-    max-width: max-content;
-}
-
-.fa-magnifying-glass span {
-    position: absolute;
-    left: 28px;
-    top: 0px;
-    font-size: 1.4rem;
-}
-
-
-.Gallery {
-    position: absolute;
-    top: 29%;
-    right: 24.5%;
-    font-size: 1.5rem;  
-}
-
-.fa-image::after {
-    position: absolute;
-    content: '';
-    background-color: var(--hover-background-color);
-    box-shadow: 0px 0px 10px var(--hover-background-color);
-    width: 0%;
-    height: 3px;
-    border-radius: 5px;
-    left: 0%;
-    top: 110%;
-    transition: 500ms;
-}
-
-.fa-image:hover::after {
-    width: 90px;
-}
-
-.fa-image span:hover, .fa-image:hover {
-    color: var(--second-color);
-}
-
-.fa-image span {
-    position: absolute;
-    left: 26px;
-    top: -2px;
-    font-size: 1.4rem;
-}
-
-
-.fa-image{
-    position: absolute;
-    left: -20px;
-    top: 7px;
-    font-size: 1.2rem;
-}
-
-.Contact {
-    position: absolute;
-    top: 41%;
-    right: 15.8%;
-    font-size: 1.5rem;  
-}
-
-.fa-feather::after {
-    position: absolute;
-    content: '';
-    background-color: var(--hover-background-color);
-    box-shadow: 0px 0px 10px var(--hover-background-color);
-    width: 0%;
-    height: 3px;
-    border-radius: 5px;
-    left: 0%;
-    top: 110%;
-    transition: 500ms;
-}
-
-.fa-feather:hover::after {
-    width: 115px;
-}
-
-.fa-feather span:hover, .fa-feather:hover {
-    color: var(--second-color);
-}
-
-.fa-feather {
-    position: absolute;
-    left: -2px;
-    top: -3px;
-    font-size: 1.2rem;
-    max-width: max-content;
-}
-
-.fa-feather span {
-    position: absolute;
-    left: 25px;
-    top: 0px;
-    font-size: 1.4rem;
-}
-
-.zdedatobrazek {
-    z-index: -1;
-    width: 100%;
-}
-
-#Details {
-    position: absolute;
-    top: 300px;
-}
-
-.Home-bakcground {
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    top: 300px;
-    background-color: var(--main-background-color);
-    box-shadow: 0px -5px 40px var(--main-shadow-color);
-}
-
-.Nadpis-H {
-    position: absolute;
-    top: 3%;
-    font-size: 2rem;
-    left: 44%;
-    border-bottom: 3px solid var(--text-color);
-}
-
-.Nadpis-H::after {
-    position: absolute;
-    content: '';
-    top: 120%;
-    width: 85%;
-    left: 50%;
-    height: 2px;
-    background-color: var(--text-color);
-    translate: -50% -50%;
-    box-shadow: 0px 0px 15px var(--text-color);
-}
-
-.Info1 {
-    position: absolute;
-    width: 500px;
-    height: 250px;
-    background-color: transparent;
-    justify-items: center;
-    text-align: center;
-    top: 17%;
-    left: 5%;
-    border-radius: 25px;
-    border:3px solid var(--main-shadow-color);
-    cursor: pointer;
- }
-
- .Info1:hover {
-    transform: scale(1.04) translateY(-5px);
-    background-color: var(--main-shadow-color);
-    box-shadow: 0px 0px 25px var(--main-shadow-color);
- }
-
-.h21 {
-    position: relative;
-    top: 5px;
-    font-size: 1.5rem;
-}
-
-.p1 {
-    position: relative;
-    top: -5px;
-    font-size: 1rem;
-    font-weight: 400;
-    width: 500px;
-}
-
-.Info2 {
-    position: absolute;
-    width: 500px;
-    height: 250px;
-    background-color: transparent;
-    justify-items: center;
-    text-align: center;
-    top: 17%;
-    right: 5%;
-    border-radius: 25px;
-    border:3px solid var(--main-shadow-color);
-    cursor: pointer;
- }
-
-.Info2:hover {
-    transform: scale(1.04) translateY(-5px);
-    background-color: var(--main-shadow-color);
-    box-shadow: 0px 0px 25px var(--main-shadow-color);
- }
-
-.h22 {
-    position: relative;
-    top: 5px;
-    font-size: 1.5rem;
-}
-
-.p2 {
-    position: relative;
-    top: 15px;
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-.Info3 {
-    position: absolute;
-    width: 500px;
-    height: 250px;
-    background-color: transparent;
-    justify-items: center;
-    text-align: center;
-    top: 57%;
-    left: 33.5%;
-    border-radius: 25px;
-    border:3px solid var(--main-shadow-color);
-    cursor: pointer;
- }
-
-.Info3:hover {
-    transform: scale(1.04) translateY(-5px);
-    background-color: var(--main-shadow-color);
-    box-shadow: 0px 0px 25px var(--main-shadow-color);
- }
-
-.h23 {
-    position: relative;
-    top: 5px;
-    font-size: 1.5rem;
-}
-
-.p3 {
-    position: relative;
-    top: 15px;
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-#Gallery {
-    position: absolute;
-    top: 1300px;
-}
-
-.GalleryBackground {
-    position: absolute;
-    width: 100%;
-    height: 800px;
-    background-color: var(--main-shadow-color);
-    top: 1300px;
-}
-
-.Nadpis-G  {
-    position: absolute;
-    top: 5%;
-    left: 45%;
-    font-size: 1.5rem;
-    border-bottom: 3px solid var(--text-color);
-}
-
-.Nadpis-G::after {
-    position: absolute;
-    top: 130%;
-    left: 50%;
-    translate: -50% -50%;
-    content: '';
-    width: 80%;
-    height: 2.5px;
-    background-color: var(--text-color);
-    box-shadow: 0px 0px 25px var(--text-color);
-}
-
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-.slideshow-container {
-  max-width: 400px;
-  position: relative;
-  margin: 0;
-  left: 8%;
-  top: 150px;
-  border: 4px solid var(--main-background-color);
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  font-size: 30px
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(56, 56, 56, 0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.numbertext {
-  color: #272727;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: #bbb;
-  position: relative;
-  top: 90px;
-  left: -26%;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #ff009d;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-.Nadpis-31-10-24 {
-    position: absolute;
-    top: 12.5%;
-    left: 18.5%;
-}
-
-.mySlides1 {display: none}
-
-.slideshow-container1 {
-  max-width: 440px;
-  position: absolute;
-  margin: 0;
-  left: 60%;
-  top: 19%;
-  border: 4px solid var(--main-background-color);
-}
-
-.prev1, .next1 {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  font-size: 30px
-}
-
-.next1 {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev1:hover, .next1:hover {
-  background-color: rgba(56, 56, 56, 0.8);
-}
-
-.numbertext1 {
-  color: #272727;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.dot1 {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: #bbb;
-  position: relative;
-  top: 40px;
-  left: 370px;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active1, .dot1:hover {
-    background-color: #ff009d;
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
-.fade1 {
-  animation-name: fade1;
-  animation-duration: 1.5s;
+<!--
+  Slide 2
+-->
+
+<script>
+let slideIndex1 = 1;
+showSlides1(slideIndex1);
+
+function plusSlides1(n1) {
+  showSlides1(slideIndex1 += n1);
 }
 
-@keyframes fade1 {
-  from {opacity: .4} 
-  to {opacity: 1}
+function currentSlide1(n1) {
+  showSlides1(slideIndex1 = n1);
 }
 
-.Nadpis-7-11-24 {
-    position: absolute;
-    top: 12.5%;
-    right: 22.5%;
+function showSlides1(n1) {
+  let i1;
+  let slides1 = document.getElementsByClassName("mySlides1");
+  let dots1 = document.getElementsByClassName("dot1");
+  if (n1 > slides1.length) {slideIndex1 = 1}    
+  if (n1 < 1) {slideIndex1 = slides1.length}
+  for (i1 = 0; i1 < slides1.length; i1++) {
+    slides1[i1].style.display = "none";  
+  }
+  for (i1 = 0; i1 < dots1.length; i1++) {
+    dots1[i1].className = dots1[i1].className.replace(" active1", "");
+  }
+  slides1[slideIndex1-1].style.display = "block";  
+  dots1[slideIndex1-1].className += " active1";
 }
-
-#Contact {
-    position: absolute;
-    top: 2000px;
-}
-
-.Contact-background {
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    background-color: var(--main-background-color);
-    top: 2000px;
-}
-
-.Nadpis-C {
-    position: absolute;
-    left: 45%;
-    font-size: 1.8rem;
-    border-bottom: 3px solid var(--text-color);
-}
-
-.Nadpis-C::after {
-    position: absolute;
-    content: '';
-    left: 50%;
-    top: 120%;
-    width: 80%;
-    height: 2px;
-    translate: -50% -50%;
-    background-color: var(--text-color);
-    box-shadow: 0px 0px 25px var(--text-color);
-}
-
-.sendmail {
-    position: absolute;
-    width: 200px;
-    height: 75px;
-    background-color: transparent;
-    border: 3px solid var(--main-shadow-color);
-    border-radius: 45px;
-    top: 36%;
-    left: 41%;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.sendmail:hover {
-    transform: scale(1.04) translateY(-5px);
-    box-shadow: 0px 0px 25px var(--main-shadow-color);
-    background-color: var(--main-shadow-color);
-}
-
-.sendmail span{
-    position: relative;
-    font-size: 25px;
-    top: 18px;
-}
-
-.doesntwork {
-    position: absolute;
-    top: 60%;
-    left: 39%;
-    font-size: 12px;
-    color: #545454;
-}
-
-.fa-instagram {
-    position: absolute;
-    top: 25%;
-    left: 28%;
-    font-size: 40px;
-}
-
-.a-fa-instagram {
-    position: absolute;
-    top: 36.5%;
-    left: 33%;
-    width: 75px;
-    height: 75px;
-    border-radius: 50px;
-    border: 3px solid var(--main-shadow-color);
-}
-
-.a-fa-instagram:hover {
-    transform: scale(1.04) translateY(-5px);
-    background-color: #2d2d2d;
-    box-shadow: 0px 0px 25px var(--main-shadow-color);
-}
-
-.fa-whatsapp {
-    position: absolute;
-    top: 25%;
-    left: 28%;
-    font-size: 40px;
-}
-
-.a-fa-whatsapp {
-    position: absolute;
-    top: 36.5%;
-    left: 57%;
-    width: 75px;
-    height: 75px;
-    border-radius: 50px;
-    border: 3px solid var(--main-shadow-color);
-}
-
-.a-fa-whatsapp:hover {
-    transform: scale(1.04) translateY(-5px);
-    background-color: #2d2d2d;
-    box-shadow: 0px 0px 25px var(--main-shadow-color);
-}
-
-.copyright-background {
-    position: absolute;
-    top: 2300px;
-    width: 100%;
-    height: 150px;
-    background-color: var(--main-shadow-color);
-}
-
-.copyright-all-right-reserved {
-    position: absolute;
-    left: 38.5%;
-    color: #757575;
-    font-size: 15px;
-}
-
-.Copyright-email {
-    position: absolute;
-    top: 10%;
-    left: 41.5%;
-    font-size: 15px;
-    color: #757575;
-}
-
-.Copyright-creator {
-    position: absolute;
-    top: 21.5%;
-    left: 41.0%;
-    font-size: 15px;
-    color: #757575;
-}
-
-.fa-envelope {
-    position: relative;
-    left: 10px;
-    color: #757575;
-    transition: 500ms;
-}
-
-.fa-envelope:hover {
-    color: #f2f2f2;
-}
-
-.fa-github {
-    position: relative;
-    color: #757575;
-    left: 2px;
-    transition: 500ms;
-}
-
-.fa-github:hover {
-    color: #f2f2f2;
-}
-
-.s0 {
-    position: absolute;
-    top: 22%;
-    left: 18%;
-}
-
-.s1 {
-    position: absolute;
-    top: 30%;
-    left: 35%;
-}
-
-.s2 {
-    position: absolute;
-    top: 40%;
-    left: 0;
-    width: 500px;
-}
-
-.s2-2 {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-}
-
-.s3 {
-    position: absolute;
-    top: 60%;
-    left: 8%;
-}
-
-.s4 {
-    position: absolute;
-    top: 70%;
-    left: 25%;
-}
-
-.s5 {
-    position: absolute;
-    top: 80%;
-    left: 20%;
-}
-
-.s6 {
-    position: absolute;
-    top: 90%;
-    left: 25%;
-}
-
-@media(max-width: 1250px) {
-    .prev, .next,.text {
-        font-size: 11px
-    }
-    body {
-        overflow-x: hidden;
-    }
-    .Home {
-        top: 30%;
-        right: 45%;
-        font-size: 15px;
-    }
-
-    .fa-house {
-        font-size: 15px;
-    }
-
-    .fa-house span {
-        left: 21px;
-        font-size: 15px;
-    }
-
-    .fa-house:hover::after {
-        width: 67px;
-    }
-
-    .Details {
-        top: 30%;
-        right: 25%;
-    }
-
-    .fa-magnifying-glass {
-        font-size: 15px;
-    }
-
-    .fa-magnifying-glass span {
-        left: 20px;
-        font-size: 15px;
-    }
-
-    .fa-magnifying-glass:hover::after {
-        width: 73px;
-    }
-
-    .Gallery {
-        top: 45%;
-        right: 41%;
-    }
-
-    .fa-image {
-        font-size: 15px;
-    }
-
-    .fa-image span {
-        font-size: 15px;
-        left: 21px;
-    }
-
-    .fa-image:hover::after {
-        width: 70px;
-    }
-
-    .Contact {
-        top: 62%;
-        right: 24.5%;
-    }
-
-    .fa-feather {
-        font-size: 15px;
-    }
-
-    .fa-feather span{
-        font-size: 15px;
-        left: 20px;
-    }
-
-    .fa-feather:hover::after {
-        width: 80px;
-    }
-
-    .Nadpis-H {
-        top: 0px;
-        left: 30%;
-    }
-
-    .Home-bakcground {
-        height: 1000px;
-    }
-
-    .Info1 {
-        left: 5%;
-        top: 120px;
-        width: 90%;
-        height: 280px;
-        overflow-x: hidden;
-        }
-    .Info2 {
-        left: 5%;
-        width: 90%;
-        top: 420px;
-    }
-
-    .Info3 {
-        top: 690px;
-        width: 90%;
-        left: 5%;
-    }
-
-    .GalleryBackground {
-        top: 1300px;
-    }
-    .gal-31-10-24 {
-        left: 0;
-        width: 300px;
-    }
-
-    .Contact-background {
-        top: 2100px;
-    }
-    .sendmail {
-        left: 30%;
-        width: 150px;
-    }
-
-    .a-fa-instagram {
-        left: 5%;
-    }
-
-    .a-fa-whatsapp {
-        left: 75%;
-    }
-    .copyright-background {
-        top: 2350px;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .copyright-all-right-reserved {
-        left: 15%;
-    }
-    .Copyright-email {
-        left: 25%;
-    }
-
-    .Copyright-creator {
-        left: 23%;
-    }
-
-    .Copyright-assist {
-        left: 30%;
-    }
-    .s0 {
-        top: 20%;
-        left: 12%;
-    }
-    .s1 {
-        top: 35%;
-        left: 30%;
-        width: 150px;
-        position: absolute;
-    }
-    .s2 {
-        top: 45%;
-        left: 0%;
-        width: 98%;
-        position: absolute;
-    }
-    .s2-2 {
-        position: absolute;
-        top: 53%;
-        left: 40%;
-    }
-    .s3 {
-        position: absolute;
-        top: 60%;
-        left: 2%;
-        width: 90%;
-    }
-    .s4 {
-        position: absolute;
-        top: 70%;
-        width: 350px;
-        left: 10%;
-    }
-    .s5 {
-        position: absolute;
-        top: 80%;
-        left: 18%;
-    }
-    .s6 {
-        position: absolute;
-        top: 90%;
-        left: 20%;
-    }
-    .slideshow-container1{
-        top: 50%;
-        width: 70%;
-        left: 15%;
-    }
-
-    .Nadpis-31-10-24 {
-        top: 11%;
-        left: 43%;
-    }
-
-    .Nadpis-7-11-24 {
-        top: 46%;
-        left: 45%;
-    }
-
-    .slideshow-container{
-        position: absolute;
-        top: 15%;
-        width: 70%;
-        left: 15%;
-    }
-
-    .GalleryBackground {
-        height: 1200px;
-    }
-    .Contact-background {
-        top: 2300px;
-    }
-    .doesntwork {
-        left: 20%;
-    }
-    .copyright-background {
-        top: 2600px;
-     }
-     .copyright-all-right-reserved {
-        left: 22%;
-     }
-     .Copyright-email {
-        left: 30%;
-     }
-     .Copyright-creator {
-        left: 28%;
-     }
-     .Nadpis-G {
-        left: 35%;
-     }
-     .Nadpis-C {
-        left: 40%;        
-     }
-     .sendmail {
-        left: 35%;
-     }
-     .a-fa-instagram {
-        left: 10%;
-     }
-     .Nadpis-H {
-        left: 35%;
-     }
-     .dot {
-        top: 460px;
-        left: 0;
-     }
-     .dot1 {
-        top: 800px;
-        left: 0;
-     }
-}
+</script>
+<section id="Contact">
+</section>
+<section>
+    <div class="Contact-background">
+        <h2 class="Nadpis-C">Contact</h2>
+        <a href="mailto:Peckova@zsmsjizni.cz" class="sendmail"><span>Send Email</span></a>
+        <h5 class="doesntwork">doesn't work? Write on Peckova@zsmsjizni.cz</h5>
+        <a href="https://www.instagram.com/hiduribots/" class="a-fa-instagram"><i class="fa-brands fa-instagram"></i></a>
+</section>
+<section>
+    <div class="copyright-background">
+        <h4 class="copyright-all-right-reserved">(C) All rights reserved Hiduribots</h4>
+        <h5 class="Copyright-email">Peckova@zsmsjizni.cz</h5>
+        <h5 class="Copyright-creator">Made by Vlastovka <a href="https://github.com/Vlastovka"><i class="fa-brands fa-github"></i></a><a href="mailto:petrkar371@gmail.com"><i class="fa-solid fa-envelope"></i></a></h5>
+      </div>
+</section>
+</body>
+</html>
