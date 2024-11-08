@@ -745,52 +745,52 @@ img {vertical-align: middle;}
 }
 
 .s0 {
-    position: relative;
-    top: -15px;
-    left: 15%;
+    position: absolute;
+    top: 22%;
+    left: 18%;
 }
 
 .s1 {
-    position: relative;
-    top: 10px;
-    right: 30%;
+    position: absolute;
+    top: 30%;
+    left: 35%;
 }
 
 .s2 {
-    position: relative;
-    top: 11px;
-    left: 9%;
-    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 500px;
 }
 
 .s2-2 {
-    position: relative;
-    top: 32px;
-    left: -40%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
 }
 
 .s3 {
-    position: relative  ;
-    top: 32px;
-    left: 10%;
+    position: absolute;
+    top: 60%;
+    left: 8%;
 }
 
 .s4 {
     position: absolute;
-    top: 170px;
-    left: 30%;
+    top: 70%;
+    left: 25%;
 }
 
 .s5 {
     position: absolute;
-    top: 190px;
-    left: 35%;
+    top: 80%;
+    left: 20%;
 }
 
 .s6 {
     position: absolute;
-    top: 210px;
-    left: 28%;
+    top: 90%;
+    left: 25%;
 }
 
 @media(max-width: 1250px) {
@@ -945,43 +945,46 @@ img {vertical-align: middle;}
         left: 30%;
     }
     .s0 {
-        left: 0%;
+        top: 20%;
+        left: 12%;
     }
     .s1 {
-        top: 27%;
-        left: 32%;
+        top: 30%;
+        left: 30%;
         width: 150px;
         position: absolute;
     }
     .s2 {
-        top: 34%;
-        left: 2%;
-        width: 95%;
+        top: 40%;
+        left: 0%;
+        width: 98%;
         position: absolute;
     }
     .s2-2 {
         position: absolute;
-        top: 42%;
+        top: 48%;
         left: 40%;
     }
     .s3 {
         position: absolute;
-        top: 50%;
+        top: 57%;
         left: 2%;
         width: 90%;
     }
     .s4 {
         position: absolute;
-        top: 57%;
+        top: 66%;
         width: 350px;
         left: 10%;
     }
     .s5 {
         position: absolute;
-        left: 30%;
+        top: 75%;
+        left: 18%;
     }
     .s6 {
         position: absolute;
+        top: 85%;
         left: 20%;
     }
     .slideshow-container1{
@@ -1045,7 +1048,7 @@ img {vertical-align: middle;}
      }
      .dot {
         top: 460px;
-        left: 28%;
+        left: 0;
      }
      .dot1 {
         top: 800px;
