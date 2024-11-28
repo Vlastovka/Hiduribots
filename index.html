@@ -31,7 +31,7 @@
                 <span class="s0">Coaches: Pecková Nikola, Pechková Kateřina</span> 
                 <span class="s1">Leaders: Karásek Petr </span>
                 <span class="s2">Programators: Legeza Bruno, Stejskal Jan, Zajíček Dominik, Policer Vojta</span>
-                <span class="s3">Engineer: Holbík Petr, Komínek Štěpán, Hudák Kryštof, Jan Rotter</span>
+                <span class="s3">Engineer: Holbík Petr, Komínek Štěpán, Hudák Kryštof </span>
                 <span class="s4">Driver: Konejl Jakub, Malec Lukáš,</span>
                 <span class="s5">Photograph: Sak Ondřej, Třešňák Martin</span>
                 <span class="s6">PR: Danyi Matěj, Holovská Daniela</span>
@@ -153,6 +153,55 @@
                   </div>
           </div>
         </div>
+        <div class="gal-23-11-24">
+          <h1 class="Nadpis-23-11-24">23.11.2024</h1>
+          <div class="slideshow-container2">
+
+              <div class="mySlides2 fade2">
+                <div class="numbertext2">1 / 5</div>
+                <img src="photogallery/23-11-24-4.webp" style="width:100%">
+                <div class="text"></div>
+              </div>
+              
+              <div class="mySlides2 fade2">
+                <div class="numbertext2">2 / 5</div>
+                <img src="photogallery/23-11-24-3.webp" style="width:100%">
+                <div class="text"></div>
+              </div>
+              
+              <div class="mySlides2 fade2">
+                <div class="numbertext2">3 / 5</div>
+                <img src="photogallery/23-11-24-1.webp" style="width:100%">
+                <div class="text"></div>
+              </div>
+
+              <div class="mySlides2 fade2">
+                <div class="numbertext2">4 / 5</div>
+                <img src="photogallery/23-11-24-2.webp" style="width:100%">
+                <div class="text"></div>
+              </div>
+
+              <div class="mySlides2 fade2">
+                <div class="numbertext2">5 / 5</div>
+                <img src="photogallery/23-11-24-5.webp" style="width:100%">
+                <div class="text"></div>
+              </div>
+              
+              <a class="prev2" onclick="plusSlides2(-1)">⇦</a>
+              <a class="next2" onclick="plusSlides2(1)">⇨</a>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot2" onclick="currentSlide2(1)"></span> 
+                <span class="dot2" onclick="currentSlide2(2)"></span> 
+                <span class="dot2" onclick="currentSlide2(3)"></span> 
+                <span class="dot2" onclick="currentSlide2(4)"></span> 
+                <span class="dot2" onclick="currentSlide2(5)"></span> 
+              </div>
+      </div>
+    </div>
     </section>
         <script>
 let slideIndex = 1;
@@ -213,6 +262,41 @@ function showSlides1(n1) {
   }
   slides1[slideIndex1-1].style.display = "block";  
   dots1[slideIndex1-1].className += " active1";
+}
+
+</script>
+
+<!--
+  Slide 3
+-->
+
+
+<script>
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n2) {
+  showSlides2(slideIndex2 += n2);
+}
+
+function currentSlide2(n2) {
+  showSlides2(slideIndex1 = n2);
+}
+
+function showSlides2(n2) {
+  let i2;
+  let slides2 = document.getElementsByClassName("mySlides2");
+  let dots2 = document.getElementsByClassName("dot2");
+  if (n2 > slides2.length) {slideIndex2 = 2}    
+  if (n2 < 1) {slideIndex2 = slides2.length}
+  for (i2 = 0; i2 < slides2.length; i2++) {
+    slides2[i2].style.display = "none";  
+  }
+  for (i2 = 0; i2 < dots2.length; i2++) {
+    dots2[i2].className = dots2[i2].className.replace(" active2", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";  
+  dots2[slideIndex2-1].className += " active2";
 }
 </script>
 <section id="Contact">
