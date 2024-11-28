@@ -662,8 +662,8 @@ img {vertical-align: middle;}
 
 .Nadpis-23-11-24 {
     position: absolute;
-    top: 12.5%;
-    left: 18.5%;
+    top: 220%;
+    left: 45%;
 }
 
 .slideshow-container2 {
@@ -1122,6 +1122,11 @@ img {vertical-align: middle;}
 
     .Nadpis-7-11-24 {
         top: 46%;
+        left: 45%;
+    }
+
+    .Nadpis-23-11-24 {
+        top: 250%;
         left: 45%;
     }
 
