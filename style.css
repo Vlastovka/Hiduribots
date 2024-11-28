@@ -39,6 +39,10 @@ body {
     overflow-x: hidden;
 }
 
+/*
+    Upper
+*/
+
 nav {
     position:absolute;
     top: 0;
@@ -245,6 +249,14 @@ nav {
     width: 100%;
 }
 
+/*
+    End of Upper
+*/
+
+/*
+    Details
+*/
+
 #Details {
     position: absolute;
     top: 300px;
@@ -379,6 +391,63 @@ nav {
     font-weight: 400;
 }
 
+.s0 {
+    position: absolute;
+    top: 22%;
+    left: 18%;
+}
+
+.s1 {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.s2 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 500px;
+}
+
+.s2-2 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.s3 {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+}
+
+.s4 {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+}
+
+.s5 {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+
+.s6 {
+    position: absolute;
+    top: 90%;
+    left: 25%;
+}
+
+/*
+    End of Info
+*/
+
+/* 
+    Photogallery
+*/
+
 #Gallery {
     position: absolute;
     top: 1300px;
@@ -387,7 +456,7 @@ nav {
 .GalleryBackground {
     position: absolute;
     width: 100%;
-    height: 800px;
+    height: 1600px;
     background-color: var(--main-shadow-color);
     top: 1300px;
 }
@@ -412,15 +481,25 @@ nav {
     box-shadow: 0px 0px 25px var(--text-color);
 }
 
+/*
+    31.10.24'
+*/
 .mySlides {display: none}
 img {vertical-align: middle;}
+
+.Nadpis-31-10-24 {
+    position: absolute;
+    top: 12.5%;
+    left: 18.5%;
+}
+
 
 .slideshow-container {
   max-width: 400px;
   position: relative;
   margin: 0;
   left: 8%;
-  top: 150px;
+  top: 250px;
   border: 4px solid var(--main-background-color);
 }
 
@@ -474,7 +553,7 @@ img {vertical-align: middle;}
   margin: 0 2px;
   background-color: #bbb;
   position: relative;
-  top: 90px;
+  top: 150px;
   left: -26%;
   border-radius: 50%;
   display: inline-block;
@@ -494,13 +573,9 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
-
-.Nadpis-31-10-24 {
-    position: absolute;
-    top: 12.5%;
-    left: 18.5%;
-}
-
+/*
+    7.11.24'
+*/
 .mySlides1 {display: none}
 
 .slideshow-container1 {
@@ -508,7 +583,7 @@ img {vertical-align: middle;}
   position: absolute;
   margin: 0;
   left: 60%;
-  top: 19%;
+  top: 16%;
   border: 4px solid var(--main-background-color);
 }
 
@@ -552,7 +627,7 @@ img {vertical-align: middle;}
   margin: 0 2px;
   background-color: #bbb;
   position: relative;
-  top: 40px;
+  top: 120px;
   left: 370px;
   border-radius: 50%;
   display: inline-block;
@@ -579,6 +654,96 @@ img {vertical-align: middle;}
     right: 22.5%;
 }
 
+/*
+    23.11.24'
+*/
+
+.mySlides2 {display: none}
+
+.Nadpis-23-11-24 {
+    position: absolute;
+    top: 12.5%;
+    left: 18.5%;
+}
+
+.slideshow-container2 {
+  max-width: 440px;
+  position: absolute;
+  margin: 0;
+  left: 30%;
+  top: 225%;
+  border: 4px solid var(--main-background-color);
+}
+
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  font-size: 30px
+}
+
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev2:hover, .next2:hover {
+  background-color: rgba(56, 56, 56, 0.8);
+}
+
+.numbertext2 {
+  color: #272727;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot2 {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  position: relative;
+  top: 1650px;
+  left: -20px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active2, .dot2:hover {
+    background-color: #ff009d;
+  }
+
+.fade2 {
+  animation-name: fade2;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade2 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*
+    End of photogallery
+*/
+
+/*
+    Contact
+*/
 #Contact {
     position: absolute;
     top: 2000px;
@@ -589,7 +754,7 @@ img {vertical-align: middle;}
     width: 100%;
     height: 300px;
     background-color: var(--main-background-color);
-    top: 2000px;
+    top: 2700px;
 }
 
 .Nadpis-C {
@@ -691,9 +856,16 @@ img {vertical-align: middle;}
     box-shadow: 0px 0px 25px var(--main-shadow-color);
 }
 
+/*
+    End of contact
+*/
+
+/* 
+    Copyright
+*/
 .copyright-background {
     position: absolute;
-    top: 2300px;
+    top: 3000px;
     width: 100%;
     height: 150px;
     background-color: var(--main-shadow-color);
@@ -743,56 +915,7 @@ img {vertical-align: middle;}
 .fa-github:hover {
     color: #f2f2f2;
 }
-
-.s0 {
-    position: absolute;
-    top: 22%;
-    left: 18%;
-}
-
-.s1 {
-    position: absolute;
-    top: 30%;
-    left: 35%;
-}
-
-.s2 {
-    position: absolute;
-    top: 40%;
-    left: 0;
-    width: 500px;
-}
-
-.s2-2 {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-}
-
-.s3 {
-    position: absolute;
-    top: 60%;
-    left: 8%;
-}
-
-.s4 {
-    position: absolute;
-    top: 70%;
-    left: 25%;
-}
-
-.s5 {
-    position: absolute;
-    top: 80%;
-    left: 20%;
-}
-
-.s6 {
-    position: absolute;
-    top: 90%;
-    left: 25%;
-}
-
+/* End of Copyright */
 @media(max-width: 1250px) {
     .prev, .next,.text {
         font-size: 11px
@@ -1009,17 +1132,31 @@ img {vertical-align: middle;}
         left: 15%;
     }
 
+    .slideshow-container1{
+        position: absolute;
+        top: 40%;
+        width: 70%;
+        left: 15%;
+    }
+
+    .slideshow-container2{
+        position: absolute;
+        top: 260%;
+        width: 70%;
+        left: 15%;
+    }
+
     .GalleryBackground {
-        height: 1200px;
+        height: 1600px;
     }
     .Contact-background {
-        top: 2300px;
+        top: 2950px;
     }
     .doesntwork {
         left: 20%;
     }
     .copyright-background {
-        top: 2600px;
+        top: 3250px;
      }
      .copyright-all-right-reserved {
         left: 22%;
@@ -1046,11 +1183,17 @@ img {vertical-align: middle;}
         left: 35%;
      }
      .dot {
-        top: 460px;
-        left: 0;
+        top: 480px;
+        left: 90px;
      }
      .dot1 {
         top: 800px;
         left: 0;
+     }
+
+     .dot2 {
+        position: relative;
+        top: 2370px;
+        left: 10px;
      }
 }
