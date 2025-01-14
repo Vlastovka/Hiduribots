@@ -1,0 +1,2305 @@
+:root {
+    /*
+        Text colors
+    */
+
+    /* Basic color */ --text-color: #fff;
+    /* Second color*/ --second-color: #e6cca6;
+
+    /* 
+        Background colors
+    */
+
+    /* Main background color */ --main-background-color: #1a1a1a;
+    /* Second background color */ --second-background-color: #232121;
+    /* Hover background color */ --hover-background-color: #e6c89b;
+
+    /*
+        Shadow colors
+    */
+
+    /* Main shadow color */ --main-shadow-color: #2d2d2d;
+    /* Light shadow color */ --light-shadow-color: #cecece;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: var(--main-shadow-color);
+    overflow-x: hidden;
+}
+
+/*
+    Upper
+*/
+
+nav {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-color: var(--second-background-color);
+    box-shadow: 0px 5px 50px black;
+}
+
+.Logo {
+    position: absolute;
+    width: 50px;
+    top: -10px;
+    left: -55px;
+    font-weight: 600;
+}
+
+.Nadpis {
+    position: absolute;
+    left: 10%;
+    font-size: 2rem;
+    top: 25%;
+    font-weight: 600;
+    color: #e6c89b;
+}
+
+.Home {
+    position: absolute;
+    right: 45%;
+    top: 40%;
+    font-size: 1.5rem;
+    transition: 500ms;
+}
+
+.fa-house::after {
+    position: absolute;
+    content: '';
+    background-color: var(--hover-background-color);
+    box-shadow: 0px 0px 10px var(--hover-background-color);
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    left: 0%;
+    top: 110%;
+    transition: 500ms;
+}
+
+.fa-house:hover::after {
+    width: 90px;
+}
+
+.fa-house span:hover, .fa-house:hover {
+    color: var(--second-color);
+}
+
+.fa-house {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    font-size: 1.4rem;
+    max-width: max-content;
+}
+
+.fa-house span {
+    position: absolute;
+    left: 28px;
+    top: 0px;
+    font-size: 1.4rem;
+}
+
+.Details {
+    position: absolute;
+    top: 40%;
+    right: 36%;
+    font-size: 1.5rem;  
+}
+
+.fa-magnifying-glass::after {
+    position: absolute;
+    content: '';
+    background-color: var(--hover-background-color);
+    box-shadow: 0px 0px 10px var(--hover-background-color);
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    left: 0%;
+    top: 110%;
+    transition: 500ms;
+}
+
+.fa-magnifying-glass:hover::after {
+    width: 105px;
+}
+
+.fa-magnifying-glass span:hover, .fa-magnifying-glass:hover {
+    color: var(--second-color);
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    font-size: 1.4rem;
+    max-width: max-content;
+}
+
+.fa-magnifying-glass span {
+    position: absolute;
+    left: 28px;
+    top: 0px;
+    font-size: 1.4rem;
+}
+
+
+.Gallery {
+    position: absolute;
+    top: 29%;
+    right: 24.5%;
+    font-size: 1.5rem;  
+}
+
+.fa-image::after {
+    position: absolute;
+    content: '';
+    background-color: var(--hover-background-color);
+    box-shadow: 0px 0px 10px var(--hover-background-color);
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    left: 0%;
+    top: 110%;
+    transition: 500ms;
+}
+
+.fa-image:hover::after {
+    width: 90px;
+}
+
+.fa-image span:hover, .fa-image:hover {
+    color: var(--second-color);
+}
+
+.fa-image span {
+    position: absolute;
+    left: 26px;
+    top: -2px;
+    font-size: 1.4rem;
+}
+
+
+.fa-image{
+    position: absolute;
+    left: -20px;
+    top: 7px;
+    font-size: 1.2rem;
+}
+
+.Contact {
+    position: absolute;
+    top: 41%;
+    right: 15.8%;
+    font-size: 1.5rem;  
+}
+
+.fa-feather::after {
+    position: absolute;
+    content: '';
+    background-color: var(--hover-background-color);
+    box-shadow: 0px 0px 10px var(--hover-background-color);
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    left: 0%;
+    top: 110%;
+    transition: 500ms;
+}
+
+.fa-feather:hover::after {
+    width: 115px;
+}
+
+.fa-feather span:hover, .fa-feather:hover {
+    color: var(--second-color);
+}
+
+.fa-feather {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    font-size: 1.2rem;
+    max-width: max-content;
+}
+
+.fa-feather span {
+    position: absolute;
+    left: 25px;
+    top: 0px;
+    font-size: 1.4rem;
+}
+
+.zdedatobrazek {
+    top: -5%;
+    position: absolute;
+    z-index: -1;
+    width: 22%;
+}
+
+.zdedatobrazek2 {
+    z-index: -1;
+    position: absolute;
+    width: 42%;
+    left: 21%;
+}
+
+.zdedatobrazek3 {
+    z-index: -1;
+    position: absolute;
+    width: 40%;
+    left: 61%;
+    top: -20%;
+}
+
+/*
+    End of Upper
+*/
+
+/*
+    Details
+*/
+
+#Details {
+    position: absolute;
+    top: 300px;
+}
+
+.Home-bakcground {
+    position: absolute;
+    width: 100%;
+    height: 1200px;
+    top: 300px;
+    background-color: var(--main-background-color);
+    box-shadow: 0px -inset5px 50px black;
+}
+
+.Nadpis-H {
+    position: absolute;
+    top: 3%;
+    font-size: 2rem;
+    left: 44%;
+    border-bottom: 3px solid var(--text-color);
+}
+
+.Nadpis-H::after {
+    position: absolute;
+    content: '';
+    top: 120%;
+    width: 85%;
+    left: 50%;
+    height: 2px;
+    background-color: var(--text-color);
+    translate: -50% -50%;
+    box-shadow: 0px 0px 15px var(--text-color);
+}
+
+.Team-members-box {
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    width: 30%;
+    height: 85%;
+    border-radius: 15px;
+    border: 3px solid var(--main-shadow-color);
+    box-shadow: 15px 15px 15px #202020;
+    text-align: center;
+}
+
+.Team-members-box:hover {
+    transform: scale(1.04) translateY(-5px);
+    box-shadow: 0px 0px 15px var(--main-shadow-color);
+    background-color: var(--main-shadow-color);
+}
+
+.Team-members-main {
+    position: absolute;
+    font-size: 20px;
+    top: -2.5%;
+    left: 34%;
+}
+
+.Team-members-main::after {
+    position: absolute;
+    content: '';
+    top: 105%;
+    width: 100%;
+    left: 50%;
+    height: 2px;
+    background-color: var(--text-color);
+    translate: -50% -50%;
+    box-shadow: 0px 0px 15px var(--text-color);
+}
+
+.Names {
+    position: relative;
+    font-size: 16px;
+}
+
+.Victories {
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    width: 40%;
+    height: 17%;
+    text-align: center;
+    border: 3px solid var(--main-shadow-color);
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px #202020;
+
+}
+
+.Victories:hover {
+    transform: scale(1.04) translateY(-5px);
+    box-shadow: 0px 0px 15px var(--main-shadow-color);
+    background-color: var(--main-shadow-color);
+}
+
+.Victories-main {
+    position: absolute;
+    font-size: 20px;
+    left: 43%;
+}
+
+.Victories-main::after {
+    position: absolute;
+    content: "";
+    top: 120%;
+    width: 100%;
+    left: 50%;
+    height: 2px;
+    background-color: var(--text-color);
+    translate: -50% -50%;
+    box-shadow: 0px 0px 15px var(--text-color);
+
+}
+.VIQRC {
+    position: relative;
+    top: 25%;
+}
+
+.Aboutus {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 40%;
+    height: 17%;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px solid var(--main-shadow-color);
+    box-shadow: 15px 15px 15px #202020;
+}
+
+.Aboutus:hover {
+    transform: scale(1.04) translateY(-5px);
+    box-shadow: 0px 0px 15px var(--main-shadow-color);
+    background-color: var(--main-shadow-color);
+}
+
+.paragraph-aboutus {
+    position: relative;
+    top: 17%;
+}
+
+.Aboutus-main {
+    position: absolute;
+    left: 45%;
+    font-size: 20px;
+}
+
+.Aboutus-main::after {
+    position: absolute;
+    content: "";
+    top: 120%;
+    width: 100%;
+    left: 50%;
+    height: 2px;
+    background-color: var(--text-color);
+    translate: -50% -50%;
+    box-shadow: 0px 0px 15px var(--text-color);
+
+}
+
+.Robotfotko {
+    position: absolute;
+    width: 20%;
+    top: 55%;
+    left: 50%;
+}
+
+.Robotfotko2 {
+    position: absolute;
+    width: 20%;
+    top: 55%;
+    left: 70%;
+}
+
+.podiumfotkausti {
+    position: absolute;
+    width: 40%;
+    top: 55%;
+    left: 50%;
+}
+
+/*
+    End of Info
+*/
+
+/* 
+    Photogallery
+*/
+
+#Gallery {
+    position: absolute;
+    top: 1600px;
+}
+
+.GalleryBackground {
+    position: absolute;
+    width: 100%;
+    height: 2400px;
+    background-color: var(--main-shadow-color);
+    top: 1500px;
+}
+
+.Nadpis-G  {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--text-color);
+}
+
+.Nadpis-G::after {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    translate: -50% -50%;
+    content: '';
+    width: 80%;
+    height: 2.5px;
+    background-color: var(--text-color);
+    box-shadow: 0px 0px 25px var(--text-color);
+}
+
+/*
+    31.10.24'
+*/
+
+.FT-Container {
+    position: absolute;
+    border: 3px solid var(--main-background-color);
+    width: 50%;
+    height: 7%;
+    top: 14%;
+    left: 40%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 15px 15px 15px var(--main-background-color);
+
+}
+
+.FT-Container:hover {
+    transform: scale(1.04) translateY(-5px);
+    box-shadow: 0px 0px 25px var(--main-background-color);
+    background-color: var(--main-background-color);
+}
+
+.FT-Title {
+    position: absolute;
+    font-size: 18px;
+    top: -15%;
+    left: 42.5%;
+}
+
+.FT-Title::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    box-shadow: 0px 0px 15px white;
+}
+
+.FT-paragraph {
+    position: relative;
+    top: 40%;
+}
+
+.Nadpis-31-10-24 {
+    position: absolute;
+    color: var(--main-background-color);
+    top: 2%;
+    left: 70%;
+    z-index: 2;
+}
+
+
+.slideshow-container {
+  max-width: 400px;
+  position: absolute;
+  margin: 0;
+  left: 8%;
+  top: 12%;
+  border: 4px solid var(--main-background-color);
+  z-index: 1;
+  box-shadow: 15px 15px 15px var(--main-background-color);
+}
+/*
+    7.11.24'
+*/
+.slideshow-container1 {
+  max-width: 440px;
+  position: absolute;
+  margin: 0;
+  left: 8%;
+  top: 40%;
+  border: 4px solid var(--main-background-color);
+  z-index: 1;
+  box-shadow: 15px 15px 15px var(--main-background-color);
+}
+
+
+.Nadpis-7-11-24 {
+    position: absolute;
+    color: var(--main-background-color);
+    top: 2%;
+    left: 70%;
+    z-index: 2;
+}
+
+.ST-Container {
+        position: absolute;
+        border: 3px solid var(--main-background-color);
+        width: 50%;
+        height: 7%;
+        top: 42%;
+        left: 40%;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 15px 15px 15px var(--main-background-color);
+    
+    }
+    
+    .ST-Container:hover {
+        transform: scale(1.04) translateY(-5px);
+        box-shadow: 0px 0px 25px var(--main-background-color);
+        background-color: var(--main-background-color);
+    }
+    .ST-Title {
+        position: absolute;
+        font-size: 18px;
+        top: -15%;
+        left: 42.5%;
+    }
+    
+    .ST-Title::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 100%;
+        height: 10%;
+        background-color: white;
+        box-shadow: 0px 0px 15px white;
+    }
+    
+    .St-paragraph {
+        position: relative;
+        top: 40%;
+    }
+    
+/*
+    23.11.24'
+*/
+.Nadpis-23-11-24 {
+    position: absolute;
+    color: var(--main-background-color);
+    top: 2%;
+    left: 70%;
+    z-index: 2;
+}
+
+.slideshow-container2 {
+  max-width: 440px;
+  position: absolute;
+  margin: 0;
+  left: 8%;
+  top: 65%;
+  border: 4px solid var(--main-background-color);
+  z-index: 1;
+  box-shadow: 15px 15px 15px var(--main-background-color);
+}
+
+.TH-Container {
+    position: absolute;
+    border: 3px solid var(--main-background-color);
+    width: 50%;
+    height: 7%;
+    top: 66%;
+    left: 40%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 15px 15px 15px var(--main-background-color);
+
+}
+
+.TH-Container:hover {
+    transform: scale(1.04) translateY(-5px);
+    box-shadow: 0px 0px 25px var(--main-background-color);
+    background-color: var(--main-background-color);
+}
+.TH-Title {
+    position: absolute;
+    font-size: 18px;
+    top: -15%;
+    left: 42.5%;
+}
+
+.TH-Title::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    box-shadow: 0px 0px 15px white;
+}
+
+.TH-paragraph {
+    position: relative;
+    top: 30%;
+}
+
+/*
+    9.1.25'
+*/
+.Nadpis-9-1-25 {
+    position: absolute;
+    color: var(--main-background-color);
+    top: 2%;
+    left: 70%;
+    z-index: 2;
+}
+
+.slideshow-container3 {
+  max-width: 440px;
+  position: absolute;
+  margin: 0;
+  left: 8%;
+  top: 95%;
+  border: 4px solid var(--main-background-color);
+  z-index: 1;
+  box-shadow: 15px 15px 15px var(--main-background-color);
+}
+
+.TT-Container {
+    position: absolute;
+    border: 3px solid var(--main-background-color);
+    width: 50%;
+    height: 7%;
+    top: 102%;
+    left: 40%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 15px 15px 15px var(--main-background-color);
+
+}
+
+.TT-Container:hover {
+    transform: scale(1.04) translateY(-5px);
+    box-shadow: 0px 0px 25px var(--main-background-color);
+    background-color: var(--main-background-color);
+}
+.TT-Title {
+    position: absolute;
+    font-size: 18px;
+    top: -15%;
+    left: 42.5%;
+}
+
+.TT-Title::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    box-shadow: 0px 0px 15px white;
+}
+
+.TT-paragraph {
+    position: relative;
+    top: 30%;
+}
+
+
+/*
+    End of photogallery
+*/
+
+/*
+    Contact
+*/
+#Contact {
+    position: absolute;
+    top: 4500px;
+}
+
+.Contact-background {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: var(--main-background-color);
+    top: 4500px;
+}
+
+.Nadpis-C {
+    position: absolute;
+    left: 44%;
+    font-size: 1.8rem;
+    border-bottom: 3px solid var(--text-color);
+}
+
+.Nadpis-C::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 120%;
+    width: 80%;
+    height: 2px;
+    translate: -50% -50%;
+    background-color: var(--text-color);
+    box-shadow: 0px 0px 25px var(--text-color);
+}
+
+.sendmail {
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    background-color: transparent;
+    border: 3px solid var(--main-shadow-color);
+    border-radius: 45px;
+    top: 36%;
+    left: 41%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.sendmail:hover {
+    transform: scale(1.04) translateY(-5px);
+    box-shadow: 0px 0px 25px var(--main-shadow-color);
+    background-color: var(--main-shadow-color);
+}
+
+.sendmail span{
+    position: relative;
+    font-size: 25px;
+    top: 18px;
+}
+
+.doesntwork {
+    position: absolute;
+    top: 60%;
+    left: 39%;
+    font-size: 12px;
+    color: #545454;
+}
+
+.fa-instagram {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    font-size: 40px;
+}
+
+.a-fa-instagram {
+    position: absolute;
+    top: 36.5%;
+    left: 33%;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border: 3px solid var(--main-shadow-color);
+}
+
+.a-fa-instagram:hover {
+    transform: scale(1.04) translateY(-5px);
+    background-color: #2d2d2d;
+    box-shadow: 0px 0px 25px var(--main-shadow-color);
+}
+
+.fa-facebook {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 40px;
+}
+
+.a-fa-whatsapp {
+    position: absolute;
+    top: 36.5%;
+    left: 57%;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border: 3px solid var(--main-shadow-color);
+}
+
+.a-fa-whatsapp:hover {
+    transform: scale(1.04) translateY(-5px);
+    background-color: #2d2d2d;
+    box-shadow: 0px 0px 25px var(--main-shadow-color);
+}
+
+/*
+    End of contact
+*/
+
+/* 
+    Copyright
+*/
+.copyright-background {
+    position: absolute;
+    top: 4750px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--main-shadow-color);
+}
+
+.copyright-all-right-reserved {
+    position: absolute;
+    left: 38.5%;
+    color: #757575;
+    font-size: 15px;
+}
+
+.Copyright-email {
+    position: absolute;
+    top: 10%;
+    left: 41.5%;
+    font-size: 15px;
+    color: #757575;
+}
+
+.Copyright-creator {
+    position: absolute;
+    top: 21.5%;
+    left: 41.0%;
+    font-size: 15px;
+    color: #757575;
+}
+
+.fa-envelope {
+    position: relative;
+    left: 10px;
+    color: #757575;
+    transition: 500ms;
+}
+
+.fa-envelope:hover {
+    color: #f2f2f2;
+}
+
+.fa-github {
+    position: relative;
+    color: #757575;
+    left: 2px;
+    transition: 500ms;
+}
+
+.fa-github:hover {
+    color: #f2f2f2;
+}
+
+/* End of Copyright */
+
+
+@media (max-width: 1231px) {
+
+    .zdedatobrazek {
+        width: 30%;
+        top: -10%;
+    }
+
+    .zdedatobrazek2 {
+        top: 3%;
+        left: 29%;
+    }
+
+    .zdedatobrazek3 {
+        top: -5%;
+        left: 70%;
+    }
+
+    .Nadpis {
+        font-size: 25px;
+    }
+
+    .Home {
+        font-size: 1.2rem;
+    }
+
+    .Details {
+        font-size: 1.2rem;
+    }
+
+    .Gallery {
+        font-size: 1.2rem;
+    }
+
+    .Contact {
+        font-size: 1.2rem;
+    }
+
+    .fa-house {
+        font-size: 1.3rem;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 1.3rem;
+    }
+
+    .fa-envelope {
+        font-size: 1.3rem;
+    }
+
+    .fa-image {
+        font-size: 1.3rem;
+    }
+
+    .Nadpis-H {
+        left: 40%;
+    }
+
+    .Team-members-box {
+        height: 87%;
+    }
+
+    .Team-members-main{
+        left: 30%;
+        top: -2%;
+    }
+
+    .Names {
+        top: 1%;
+        font-size: 1rem;
+    }
+
+    .Victories {
+        height: 20%;
+    }
+
+    .Victories-main {
+        left: 38%;
+    }
+
+    .Aboutus {
+        height: 16%;
+    }
+
+    .Aboutus-main {
+        left: 43%;
+        top: -5%;
+    }
+
+    .ST-Container {
+        left: 50%;
+        height: 7%;
+        width: 45%;
+    }
+
+    .FT-Container {
+        left: 50%;
+        height: 7%;
+        width: 45%;
+    }
+
+    .TH-Container {
+        left: 50%;
+        height: 10%;
+        width: 45%; 
+    }
+
+    .TT-Container {
+        left: 50%;
+        height: 10%;
+        width: 45%;
+    }
+
+    .a-fa-instagram {
+        left: 30%;
+    }
+
+    .sendmail {
+        left: 38%;
+    }
+
+    .Nadpis-C {
+        left: 42%;
+    }
+}
+
+@media (max-width: 1150px) {
+
+    .zdedatobrazek {
+        width: 30%;
+        top: -10%;
+    }
+
+    .zdedatobrazek2 {
+        top: 3%;
+        left: 29%;
+    }
+
+    .zdedatobrazek3 {
+        top: -5%;
+        left: 70%;
+    }
+
+    .Nadpis {
+        font-size: 25px;
+    }
+
+    .Home {
+        font-size: 1.2rem;
+    }
+
+    .Details {
+        font-size: 1.2rem;
+    }
+
+    .Gallery {
+        font-size: 1.2rem;
+    }
+
+    .Contact {
+        font-size: 1.2rem;
+    }
+
+    .fa-house {
+        font-size: 1.3rem;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 1.3rem;
+    }
+
+    .fa-envelope {
+        font-size: 1.3rem;
+    }
+
+    .fa-image {
+        font-size: 1.3rem;
+    }
+
+    .Nadpis-H {
+        left: 40%;
+    }
+
+    .Team-members-box {
+        top: 11%;
+        height: 88%;
+    }
+
+    .Team-members-main{
+        left: 30%;
+        top: -2%;
+    }
+
+    .Names {
+        top: 1%;
+        font-size: 1rem;
+    }
+
+    .Victories {
+        top: 11%;
+        height: 20%;
+    }
+
+    .Victories-main {
+        left: 38%;
+    }
+
+    .Aboutus {
+        height: 16%;
+    }
+
+    .Aboutus-main {
+        left: 43%;
+        top: -5%;
+    }
+
+    .ST-Container {
+        left: 50%;
+        height: 7%;
+        width: 45%;
+    }
+
+    .FT-Container {
+        left: 50%;
+        height: 7%;
+        width: 45%;
+    }
+
+    .TH-Container {
+        left: 50%;
+        height: 10%;
+        width: 45%; 
+    }
+
+    .TT-Container {
+        left: 50%;
+        height: 10%;
+        width: 45%;
+    }
+
+    .a-fa-instagram {
+        left: 30%;
+    }
+
+    .sendmail {
+        left: 38%;
+    }
+
+    .Nadpis-C {
+        left: 42%;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .zdedatobrazek {
+        width: 30%;
+        top: -5%;
+    }
+
+    .zdedatobrazek2 {
+        top: 3%;
+        left: 29%;
+    }
+
+    .zdedatobrazek3 {
+        top: -5%;
+        left: 70%;
+    }
+
+    .Nadpis {
+        font-size: 25px;
+    }
+
+    .Home {
+        left: 50%;
+        font-size: 1.2rem;
+    }
+
+    .Details {
+        left: 61%;
+        font-size: 1.2rem;
+    }
+
+    .Gallery {
+        left: 75%;
+        font-size: 1.2rem;
+    }
+
+    .Contact {
+        left: 85%;
+        font-size: 1.2rem;
+    }
+
+    .fa-house {
+        font-size: 1.3rem;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 1.3rem;
+    }
+
+    .fa-envelope {
+        font-size: 1.3rem;
+    }
+
+    .fa-image {
+        font-size: 1.3rem;
+    }
+
+    .Nadpis-H {
+        left: 40%;
+    }
+
+    .Team-members-box {
+        height: 87%;
+    }
+
+    .Team-members-main{
+        left: 25.5%;
+        top: -2%;
+    }
+
+    .Names {
+        top: 1%;
+        font-size: 0.95rem;
+    }
+
+    .Victories {
+        height: 20%;
+    }
+
+    .Victories-main {
+        left: 38%;
+    }
+
+    .Aboutus {
+        height: 16%;
+    }
+
+    .Aboutus-main {
+        left: 40%;
+        top: -5%;
+    }
+
+    .paragraph-aboutus {
+        font-size: 0.95rem;
+    }
+
+    .ST-Container {
+        left: 55%;
+        height: 8%;
+        width: 40%;
+    }
+
+    .FT-Container {
+        left: 50%;
+        height: 7%;
+        width: 45%;
+    }
+
+    .TH-Container {
+        left: 55%;
+        height: 13%;
+        width: 40%; 
+    }
+
+    .TH-Title {
+        top: 4%;
+        left: 42%;
+    }
+
+    .TT-Container {
+        left: 55%;
+        height: 12%;
+        width: 40%;
+    }
+
+    .TT-Title {
+        top: 5%;
+    }
+
+    .a-fa-instagram {
+        left: 28%;
+    }
+
+    .sendmail {
+        left: 38%;
+    }
+
+    .Nadpis-C {
+        left: 42%;
+    }
+
+    .a-fa-whatsapp {
+        left: 61%;
+    }
+
+    .doesntwork {
+        left: 35%;
+    }
+
+    .copyright-all-right-reserved {
+        left: 35%;
+    }
+
+    .Copyright-creator {
+        top: 24%;
+        left: 37%;
+    }
+    
+    .Copyright-email {
+        left: 38%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .zdedatobrazek {
+        width: 30%;
+        top: -1%;
+    }
+
+    .zdedatobrazek2 {
+        top: 4%;
+        left: 29%;
+    }
+
+    .zdedatobrazek3 {
+        top: -5%;
+        left: 70%;
+    }
+
+    .Nadpis {
+        font-size: 25px;
+    }
+
+    .Home {
+        left: 45%;
+        font-size: 1.2rem;
+    }
+
+    .Details {
+        left: 57%;
+        font-size: 1.2rem;
+    }
+
+    .Gallery {
+        left: 73%;
+        font-size: 1.2rem;
+    }
+
+    .Contact {
+        left: 85%;
+        font-size: 1.2rem;
+    }
+
+    .fa-house {
+        font-size: 1.3rem;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 1.3rem;
+    }
+
+    .fa-envelope {
+        font-size: 1.3rem;
+    }
+
+    .fa-image {
+        font-size: 1.3rem;
+    }
+
+    .Nadpis-H {
+        left: 37%;
+    }
+
+    .Team-members-box {
+        height: 87%;
+    }
+
+    .Team-members-main{
+        left: 25.5%;
+        top: -2%;
+    }
+
+    .Names {
+        top: 1%;
+        font-size: 0.92rem;
+    }
+
+    .podiumfotkausti {
+        width: 45%;
+        left: 47.5%;
+    }
+
+    .Victories {
+        height: 20%;
+    }
+
+    .Victories-main {
+        left: 38%;
+    }
+
+    .Aboutus {
+        height: 16%;
+    }
+
+    .Aboutus-main {
+        left: 40%;
+        top: -5%;
+    }
+
+    .paragraph-aboutus {
+        font-size: 0.95rem;
+    }
+
+    .ST-Container {
+        top: 32%;
+        left: 60%;
+        height: 10%;
+        width: 35%;
+    }
+
+    .ST-Title {
+        top: 10%;
+        left: 38%;
+    }
+
+    .FT-Container {
+        top: 7%;
+        left: 57%;
+        height: 9%;
+        width: 40%;
+    }
+
+    .FT-Title {
+        left: 40%;
+        top: 5%;
+    }
+
+    .TH-Container {
+        left: 62%;
+        height: 15%;
+        width: 35%; 
+    }
+
+    .TH-Title {
+        top: 4%;
+        left: 38%;
+    }
+
+    .TT-Container {
+        left: 62%;
+        height: 15%;
+        width: 35%;
+    }
+
+    .TT-Title {
+        top: 5%;
+    }
+
+    .slideshow-container3 {
+        top: 90%;
+    }
+
+    .slideshow-container {
+        top: 5%;
+    }
+
+    .slideshow-container1 {
+        top: 32%;
+    }
+
+    .slideshow-container2 {
+        top: 57%;
+    }
+
+    .Nadpis-G {
+        top: 0%;
+        left: 40%;
+    }
+
+    .a-fa-instagram {
+        left: 25%;
+    }
+
+    .sendmail {
+        left: 35%;
+    }
+
+
+    .Nadpis-C {
+        left: 40%;
+    }
+
+    .a-fa-whatsapp {
+        left: 59%;
+    }
+
+    .doesntwork {
+        left: 31%;
+    }
+
+    .copyright-all-right-reserved {
+        left: 32%;
+    }
+
+    .Copyright-creator {
+        top: 24%;
+        left: 35%;
+    }
+    
+    .Copyright-email {
+        left: 36%;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .zdedatobrazek {
+        width: 50%;
+        top: -5%;
+    }
+
+    .zdedatobrazek2 {
+        top: 4%;
+        left: 49%;
+        width: 58%;
+    }
+
+    .zdedatobrazek3 {
+        top: -5%;
+        left: 70%;
+        opacity: 0;
+    }
+
+    .Nadpis {
+        font-size: 25px;
+    }
+
+    .Home {
+        left: 33%;
+        font-size: 1.2rem;
+    }
+
+    .Details {
+        left: 48%;
+        font-size: 1.2rem;
+    }
+
+    .Gallery {
+        left: 67%;
+        font-size: 1.2rem;
+    }
+
+    .Contact {
+        left: 81%;
+        font-size: 1.2rem;
+    }
+
+    .fa-house {
+        font-size: 1.3rem;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 1.3rem;
+    }
+
+    .fa-envelope {
+        font-size: 1.3rem;
+    }
+
+    .fa-image {
+        font-size: 1.3rem;
+    }
+
+    .Nadpis-H {
+        left: 37%;
+    }
+
+    .Team-members-box {
+        height: 87%;
+        width: 40%;
+        left: 3%;
+    }
+
+    .Team-members-main{
+        left: 24%;
+        top: -2%;
+    }
+
+    .Names {
+        top: 1%;
+        font-size: 0.92rem;
+    }
+
+    .podiumfotkausti {
+        width: 45%;
+        left: 47.5%;
+    }
+
+    .Victories {
+        height: 20%;
+        width: 45%;
+    }
+
+    .Victories-main {
+        left: 32%;
+    }
+
+    .VIQRC{
+        font-size: 0.85rem;
+    }
+
+    .Aboutus {
+        height: 16%;
+        width: 45%;
+    }
+
+    .Aboutus-main {
+        left: 37%;
+        top: -5%;
+    }
+
+    .paragraph-aboutus {
+        font-size: 0.85rem;
+    }
+
+    .ST-Container {
+        top: 50%;
+        left: 10%;
+        height: 5%;
+        width: 80%;
+    }
+
+    .ST-Title {
+        top: -26%;
+        left: 43%;
+    }
+
+    .St-paragraph {
+        top: 15%;
+    }
+
+    .FT-Container {
+        top: 23%;
+        left: 10%;
+        height: 7%;
+        width: 80%;
+    }
+
+    .FT-Title {
+        left: 40%;
+        top: 5%;
+    }
+
+    .TH-Container {
+        top: 82.5%;
+        left: 5%;
+        height: 7%;
+        width: 90%; 
+    }
+
+    .TH-Title {
+        top: -15%;
+        left: 42%;
+    }
+
+    .TH-paragraph {
+        top: 18%;
+    }
+
+    .TT-Container {
+        top: 119%;
+        left: 5%;
+        height: 5%;
+        width: 90%;
+    }
+
+    .TT-Title {
+        top: -30%;
+    }
+
+    .TT-paragraph {
+        top: 20%;
+        font-size: 0.8rem;
+    }
+
+    .slideshow-container3 {
+        top: 90%;
+    }
+
+    .slideshow-container {
+        top: 5%;
+    }
+
+    .slideshow-container1 {
+        top: 32%;
+    }
+
+    .slideshow-container2 {
+        top: 57%;
+    }
+
+    .Nadpis-G {
+        top: 0%;
+        left: 40%;
+    }
+
+    .a-fa-instagram {
+        left: 17%;
+    }
+
+    .sendmail {
+        left: 30%;
+    }
+
+
+    .Nadpis-C {
+        left: 40%;
+    }
+
+    .a-fa-whatsapp {
+        left: 61%;
+    }
+
+    .doesntwork {
+        left: 26%;
+    }
+
+    .copyright-all-right-reserved {
+        left: 28%;
+    }
+
+    .Copyright-creator {
+        top: 24%;
+        left: 32%;
+    }
+    
+    .Copyright-email {
+        left: 34%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .zdedatobrazek {
+        width: 80%;
+        top: -15%;
+    }
+
+    .zdedatobrazek2 {
+        top: 4%;
+        left: 49%;
+        width: 60%;
+        opacity: 0;
+    }
+
+    .zdedatobrazek3 {
+        top: 10%;
+        left: 70%;
+        opacity: 1;
+    }
+
+    .Nadpis {
+        font-size: 25px;
+    }
+
+    .Home {
+        top: 15%;
+        left: 55%;
+        font-size: 1rem;
+    }
+
+    .Details {
+        top: 60%;
+        left: 55%;
+        font-size: 1rem;
+    }
+
+    .Gallery {
+        top: 8%;
+        left: 81%;
+        font-size: 1rem;
+    }
+
+    .Contact {
+        top: 60%;
+        left: 77.5%;
+        font-size: 1rem;
+    }
+
+    .fa-house {
+        font-size: 1.2rem;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 1.2rem;
+    }
+
+    .fa-envelope {
+        font-size: 1.2rem;
+    }
+
+    .fa-image {
+        font-size: 1.2rem;
+    }
+
+    .Nadpis-H {
+        left: 37%;
+    }
+
+    .Team-members-box {
+        height: 87%;
+        width: 40%;
+        left: 3%;
+    }
+
+    .Team-members-main{
+        left: 18%;
+        top: -2%;
+    }
+
+    .Names {
+        top: 1%;
+        font-size: 0.9rem;
+    }
+
+    .podiumfotkausti {
+        width: 45%;
+        left: 47.5%;
+    }
+
+    .Victories {
+        height: 20%;
+        width: 45%;
+    }
+
+    .Victories-main {
+        left: 32%;
+    }
+
+    .VIQRC{
+        font-size: 0.85rem;
+    }
+
+    .Aboutus {
+        height: 16%;
+        width: 45%;
+    }
+
+    .Aboutus-main {
+        left: 37%;
+        top: -5%;
+    }
+
+    .paragraph-aboutus {
+        font-size: 0.85rem;
+    }
+
+    .ST-Container {
+        top: 50%;
+        left: 10%;
+        height: 5%;
+        width: 80%;
+    }
+
+    .ST-Title {
+        top: -26%;
+        left: 43%;
+    }
+
+    .St-paragraph {
+        top: 15%;
+    }
+
+    .FT-Container {
+        top: 23%;
+        left: 10%;
+        height: 7%;
+        width: 80%;
+    }
+
+    .FT-Title {
+        left: 40%;
+        top: 5%;
+    }
+
+    .TH-Container {
+        top: 82.5%;
+        left: 5%;
+        height: 7%;
+        width: 90%; 
+    }
+
+    .TH-Title {
+        top: -15%;
+        left: 42%;
+    }
+
+    .TH-paragraph {
+        top: 18%;
+        font-size: 0.9rem;
+    }
+
+    .TT-Container {
+        top: 119%;
+        left: 5%;
+        height: 5%;
+        width: 90%;
+    }
+
+    .TT-Title {
+        top: -30%;
+    }
+
+    .TT-paragraph {
+        top: 19%;
+        font-size: 0.79rem;
+    }
+
+    .slideshow-container3 {
+        top: 90%;
+    }
+
+    .slideshow-container {
+        top: 5%;
+    }
+
+    .slideshow-container1 {
+        top: 32%;
+    }
+
+    .slideshow-container2 {
+        top: 57%;
+    }
+
+    .Nadpis-G {
+        top: 0%;
+        left: 40%;
+    }
+
+    .a-fa-instagram {
+        left: 11%;
+    }
+
+    .sendmail {
+        left: 30%;
+    }
+
+
+    .Nadpis-C {
+        left: 40%;
+    }
+
+    .a-fa-whatsapp {
+        left: 70%;
+    }
+
+    .doesntwork {
+        left: 26%;
+    }
+
+    .copyright-all-right-reserved {
+        left: 28%;
+    }
+
+    .Copyright-creator {
+        top: 24%;
+        left: 32%;
+    }
+    
+    .Copyright-email {
+        left: 34%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .zdedatobrazek {
+        width: 100%;
+        top: -6%;
+    }
+
+    .zdedatobrazek2 {
+        top: 4%;
+        left: 49%;
+        width: 60%;
+        opacity: 0;
+    }
+
+    .zdedatobrazek3 {
+        top: 10%;
+        left: 70%;
+        opacity: 0;
+    }
+
+    .Nadpis {
+        font-size: 20px;
+    }
+
+    .Home {
+        top: 15%;
+        left: 42.5%;
+        font-size: 1px;
+    }
+
+    .Home span {
+        top: 30%;
+        font-size: 1rem;
+    }
+
+    .Details{
+        top: 50%;
+        left: 42.5%;
+        font-size: 1rem;
+    }
+
+    .Details span {
+        top: 30%;
+        font-size: 1rem;
+    }
+
+    .Gallery {
+        top: 5%;
+        left: 75%;
+        font-size: 1rem;
+    }
+
+    .Gallery span {
+        font-size: 1rem;
+        top: 25%;
+    }
+
+    .Contact {
+        top: 53%;
+        left: 70%;
+        font-size: 1rem;
+    }
+
+    .Contact span {
+        top: 25%;
+        font-size: 1rem;
+    }
+
+    .fa-house {
+        font-size: 1.2rem;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 1.2rem;
+    }
+
+    .fa-envelope {
+        font-size: 1.2rem;
+    }
+
+    .fa-image {
+        font-size: 1.2rem;
+    }
+
+    .Nadpis-H {
+        left: 26%;
+    }
+
+    .Home-bakcground {
+        height: 2000px;
+    }
+
+    .Team-members-box {
+        height: 49%;
+        width: 90%;
+        left: 5%;
+    }
+
+    .GalleryBackground {
+        top: 2000px;
+    }
+
+    .Team-members-main{
+        left: 23%;
+        top: -2%;
+    }
+
+    .Names {
+        top: 1%;
+        font-size: 0.9rem;
+    }
+
+    .podiumfotkausti {
+        width: 45%;
+        left: 47.5%;
+        opacity: 0;
+    }
+
+    .Victories {
+        top: 62%;
+        height: 10%;
+        width: 90%;
+        left: 5%;
+    }
+
+    .Victories-main {
+        left: 29%;
+    }
+
+    .VIQRC{
+        font-size: 0.85rem;
+    }
+
+    .Aboutus {
+        top: 74%;
+        height: 10%;
+        width: 90%;
+        left: 5%;
+    }
+
+    .Aboutus-main {
+        left: 35%;
+        top: -5%;
+    }
+
+    .paragraph-aboutus {
+        font-size: 0.85rem;
+    }
+
+    .ST-Container {
+        top: 45%;
+        left: 10%;
+        height: 8%;
+        width: 80%;
+    }
+
+    .ST-Title {
+        top: -15%;
+        left: 36%;
+    }
+
+    .St-paragraph {
+        top: 15%;
+    }
+
+    .FT-Container {
+        top: 20%;
+        left: 10%;
+        height: 9%;
+        width: 80%;
+    }
+
+    .FT-Title {
+        left: 32%;
+        top: 5%;
+    }
+
+    .TH-Container {
+        top: 74%;
+        left: 5%;
+        height: 12%;
+        width: 90%; 
+    }
+
+    .TH-Title {
+        top: -5%;
+        left: 35%;
+    }
+
+    .TH-paragraph {
+        top: 18%;
+        font-size: 0.9rem;
+    }
+
+    .TT-Container {
+        top: 98%;
+        left: 5%;
+        height: 9%;
+        width: 90%;
+    }
+
+    .TT-Title {
+        top: -10%;
+        left: 40%;
+    }
+
+    .TT-paragraph {
+        top: 19%;
+        font-size: 0.79rem;
+    }
+
+    .slideshow-container3 {
+        left: 1%;
+        top: 87%;
+
+    }
+
+    .slideshow-container {
+        top: 5%;
+    }
+
+    .slideshow-container1 {
+        top: 32%;
+    }
+
+    .slideshow-container2 {
+        top: 57%;
+    }
+
+    .Contact-background {
+        top: 4600px;
+    }
+
+    .Nadpis-G {
+        top: 0%;
+        left: 28%;
+    }
+
+    .a-fa-instagram {
+        top: 65%;
+        left: 15%;
+        width: 75px;
+    }
+
+    .sendmail {
+        top: 30%;
+        left: 15%;
+    }
+
+
+    .Nadpis-C {
+        left: 30%;
+    }
+
+    .a-fa-whatsapp {
+        top: 65%;
+        left: 55%;
+        width: 75px;
+    }
+
+    .doesntwork {
+        top: 50%;
+        left: 10%;
+        width: 90%;
+    }
+
+    .copyright-background {
+        top: 4900px;
+    }
+
+    .copyright-all-right-reserved {
+        left: 12.5%;
+        width: 90%;
+    }
+
+    .Copyright-creator {
+        top: 24%;
+        left: 22%;
+    }
+    
+    .Copyright-email {
+        left: 26%;
+    }
+
+}
