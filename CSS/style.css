@@ -472,14 +472,14 @@ nav {
 .GalleryBackground {
     position: absolute;
     width: 100%;
-    height: 2400px;
+    height: 3000px;
     background-color: var(--main-shadow-color);
     top: 1500px;
 }
 
 .Nadpis-G  {
     position: absolute;
-    top: 5%;
+    top: 0%;
     left: 45%;
     font-size: 1.5rem;
     border-bottom: 3px solid var(--text-color);
@@ -505,8 +505,8 @@ nav {
     position: absolute;
     border: 3px solid var(--main-background-color);
     width: 50%;
-    height: 7%;
-    top: 14%;
+    height: 5%;
+    top: 5%;
     left: 40%;
     border-radius: 15px;
     text-align: center;
@@ -558,7 +558,7 @@ nav {
   position: absolute;
   margin: 0;
   left: 8%;
-  top: 12%;
+  top: 3%;
   border: 4px solid var(--main-background-color);
   z-index: 1;
   box-shadow: 15px 15px 15px var(--main-background-color);
@@ -571,7 +571,7 @@ nav {
   position: absolute;
   margin: 0;
   left: 8%;
-  top: 40%;
+  top: 19%;
   border: 4px solid var(--main-background-color);
   z-index: 1;
   box-shadow: 15px 15px 15px var(--main-background-color);
@@ -590,8 +590,8 @@ nav {
         position: absolute;
         border: 3px solid var(--main-background-color);
         width: 50%;
-        height: 7%;
-        top: 42%;
+        height: 5%;
+        top: 20%;
         left: 40%;
         border-radius: 15px;
         text-align: center;
@@ -644,7 +644,7 @@ nav {
   position: absolute;
   margin: 0;
   left: 8%;
-  top: 65%;
+  top: 35%;
   border: 4px solid var(--main-background-color);
   z-index: 1;
   box-shadow: 15px 15px 15px var(--main-background-color);
@@ -654,8 +654,8 @@ nav {
     position: absolute;
     border: 3px solid var(--main-background-color);
     width: 50%;
-    height: 7%;
-    top: 66%;
+    height: 5.5%;
+    top: 37%;
     left: 40%;
     border-radius: 15px;
     text-align: center;
@@ -708,7 +708,7 @@ nav {
   position: absolute;
   margin: 0;
   left: 8%;
-  top: 95%;
+  top: 57%;
   border: 4px solid var(--main-background-color);
   z-index: 1;
   box-shadow: 15px 15px 15px var(--main-background-color);
@@ -719,7 +719,7 @@ nav {
     border: 3px solid var(--main-background-color);
     width: 50%;
     height: 7%;
-    top: 97%;
+    top: 59%;
     left: 40%;
     border-radius: 15px;
     text-align: center;
@@ -758,6 +758,69 @@ nav {
 
 
 /*
+    28.1.25'
+*/
+.Nadpis-28-1-25 {
+    position: absolute;
+    color: var(--text-color);
+    top: 2%;
+    left: 70%;
+    z-index: 2;
+}
+
+.slideshow-container4 {
+  max-width: 440px;
+  position: absolute;
+  margin: 0;
+  left: 8%;
+  top: 80%;
+  border: 4px solid var(--main-background-color);
+  z-index: 1;
+  box-shadow: 15px 15px 15px var(--main-background-color);
+}
+
+.p28-Container {
+    position: absolute;
+    border: 3px solid var(--main-background-color);
+    width: 50%;
+    height: 5%;
+    top: 82%;
+    left: 40%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 15px 15px 15px var(--main-background-color);
+
+}
+
+.p28-Container:hover {
+    transform: scale(1.04) translateY(-5px);
+    box-shadow: 0px 0px 25px var(--main-background-color);
+    background-color: var(--main-background-color);
+}
+.p28-Title {
+    position: absolute;
+    font-size: 18px;
+    top: -15%;
+    left: 42.5%;
+}
+
+.p28-Title::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    box-shadow: 0px 0px 15px white;
+}
+
+.p28-paragraph {
+    position: relative;
+    top: 30%;
+}
+/*
     End of photogallery
 */
 
@@ -774,7 +837,7 @@ nav {
     width: 100%;
     height: 300px;
     background-color: var(--main-background-color);
-    top: 4200px;
+    top: 5000px;
 }
 
 .Nadpis-C {
@@ -885,7 +948,7 @@ nav {
 */
 .copyright-background {
     position: absolute;
-    top: 4550px;
+    top: 5300px;
     width: 100%;
     height: 150px;
     background-color: var(--main-shadow-color);
@@ -2147,10 +2210,11 @@ nav {
 
     .Victories-main {
         left: 29%;
+        top: -8%;
     }
 
     .VIQRC{
-        font-size: 0.85rem;
+        font-size: 0.7rem;
     }
 
     .Aboutus {
@@ -2219,15 +2283,15 @@ nav {
     }
 
     .TT-Container {
-        top: 75%;
+        top: 67%;
         left: 5%;
         height: 7%;
         width: 90%;
     }
 
     .TT-Title {
-        top: -22%;
-        left: 40%;
+        top: -12%;
+        left: 37%;
     }
 
     .TT-paragraph {
@@ -2253,8 +2317,29 @@ nav {
         top: 35%;
     }
 
+    .slideshow-container4 {
+        left: 1%;
+        top: 75%;
+    }
+
+    .p28-Container {
+        width: 85%;
+        height: 7%;
+        top: 91%;
+        left: 7%;
+    }
+
+    .p28-Title {
+        top: -12%;
+        left: 35%;
+    }
+
+    .p28-paragraph {
+        top: 12%;
+    }
+
     .Contact-background {
-        top: 5000px;
+        top: 5500px;
     }
 
     .Nadpis-G {
@@ -2291,7 +2376,7 @@ nav {
     }
 
     .copyright-background {
-        top: 5350px;
+        top: 5800px;
     }
 
     .copyright-all-right-reserved {
