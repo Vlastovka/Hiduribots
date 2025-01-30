@@ -21,15 +21,15 @@
     /* Main shadow color */ --main-shadow-color: #2d2d2d;
     /* Light shadow color */ --light-shadow-color: #cecece;
 }
-.mySlides, .mySlides1, .mySlides2, .mySlides3 {display: none}
+.mySlides, .mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
 img {vertical-align: middle;}
 
-.slideshow-container:hover, .slideshow-container1:hover, .slideshow-container2:hover, .slideshow-container3:hover{
+.slideshow-container:hover, .slideshow-container1:hover, .slideshow-container2:hover, .slideshow-container3:hover, .slideshow-container4:hover{
     transform: scale(1.04) translateY(-5px);
     box-shadow: 0px 0px 25px var(--main-background-color);
 }
 
-.prev, .next, .prev1, .next1, .prev2, .next2, .prev3, .next3 {
+.prev, .next, .prev1, .next1, .prev2, .next2, .prev3, .next3, .prev4, .next4 {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -45,12 +45,12 @@ img {vertical-align: middle;}
   font-size: 30px
 }
 
-.next, .next1, .next2, .next3 {
+.next, .next1, .next2, .next3, .next4 {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover, .prev1:hover, .next1:hover , .prev2:hover, .next2:hover, .prev3:hover, .next3:hover {
+.prev:hover, .next:hover, .prev1:hover, .next1:hover , .prev2:hover, .next2:hover, .prev3:hover, .next3:hover, .prev4:hover, .next4:hover {
   background-color: rgba(56, 56, 56, 0.8);
 }
 
@@ -64,7 +64,7 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-.numbertext, .numbertext1, .numbertext2, .numbertext3 {
+.numbertext, .numbertext1, .numbertext2, .numbertext3, .numbertext4{
   color: #272727;
   font-size: 15px;
   padding: 8px 12px;
@@ -73,11 +73,11 @@ img {vertical-align: middle;}
   left: 3%;
 }
 
-.active, .active1, .active2, .active3 {
+.active, .active1, .active2, .active3, .active4 {
   background-color: transparent;
 }
 
-.fade, .fade1, .fade2, .fade3{
+.fade, .fade1, .fade2, .fade3, .fade4{
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -98,6 +98,11 @@ img {vertical-align: middle;}
   }
 
   @keyframes fade3 {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade4 {
     from {opacity: .4} 
     to {opacity: 1}
   }
