@@ -1,574 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Photogalleryholders.css">
-    <script src="https://kit.fontawesome.com/2e29afbbfe.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://kit.fontawesome.com/2e29afbbfe.js" crossorigin="anonymous"></script>
     <script defer src="//unpkg.com/static.email"></script>
     <script defer src="js/Emailsend.js"></script>
-    <link rel="Website icon" href="Hiduribots_-_black_-_Smaller bez pozadi.png">
-    <title>Hiduribots</title>
+    <link rel="Website icon" href="Assets/Hiduribots_-_black_-_Smaller bez pozadi.png">
+  <title>Hiduribots</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0b0b0f;
+      color: white;
+    }
+
+    nav {
+      background: #150b2f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #cfaaff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .hero,
+    .hero.reverse {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      background-attachment: fixed;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0b0b0f, #1a0d2c);
+      transition: background 0.5s;
+    }
+
+    .hero.reverse {
+      flex-direction: row-reverse;
+      background: linear-gradient(to left, #0b0b0f, #1a0d2c);
+    }
+
+    .hero-text {
+      flex: 1 1 300px;
+      padding: 2rem;
+      animation: fadeInUp 1s ease;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: #cfaaff;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .hero-image {
+      flex: 1 1 300px;
+      position: relative;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 1500px;
+      display: block;
+      border-radius: 20px;
+      object-fit: cover;
+      mask-image: linear-gradient(to right, transparent 0%, black 50%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 50%);
+    }
+
+    .reverse .hero-image img {
+      mask-image: linear-gradient(to left, transparent 0%, black 50%);
+      -webkit-mask-image: linear-gradient(to left, transparent 0%, black 50%);
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    h2 {
+      color: #cfaaff;
+      border-bottom: 2px solid #cfaaff;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .members, .gallery, .contact {
+      background-color: #120b1c;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-extra {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    .footer-extra a {
+      color: #cfaaff;
+      text-decoration: none;
+      margin-left: 0.5rem;
+    }
+
+    .footer-extra a:hover {
+      color: #ffffff;
+    }
+
+    .github-icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-left: 6px;
+      filter: invert(1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero-text, .hero-image {
+        flex: 1 1 100%;
+        padding: 1rem 0;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .hero-text p {
+        font-size: 1rem;
+      }
+    }
+
+    i {
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <a href="index.html" class="Nadpis"><img src="assets/Hiduribots_-_white_-_smaller-removebg-preview.png" class="Logo">Hiduribots</a>
-            <a href="index.html" class="Home"><i class="fa-solid fa-house"><span>Home</span></i></a>
-            <a href="#Details" class="Details"><i class="fa-solid fa-magnifying-glass"><span>Details</span></i></a>
-            <a href="#Gallery" class="Gallery"><i class="fa-solid fa-image"><span>Gallery</span></i></a>
-            <a href="#Contact" class="Contact"><i class="fa-solid fa-feather"><span>Contact</span></i></a>
-        </ul>
-    </nav>
-    <img src="assets/Teamphoto.png" class="zdedatobrazek">
-    <img src="assets/podiumfotkausti.png" class="zdedatobrazek2">
-    <img src="assets/Robotfotko.png" class="zdedatobrazek3">
-    <section id="Details">
-    </section>
-    <section>
-        <div class="Home-bakcground">
-            <h2 class="Nadpis-H">Hiduribots</h2>
-            <div class="Team-members-box">
-              <h5 class="Team-members-main">Team members</h5>
-              <h6 class="Names N-Peckova">Pecková Nikola - Coach</h6>
-              <h6 class="Names K-Pechkova">Pechková Kateřina - Coach</h6>
-              <h6 class="Names P-Kararasek">Karásek Petr - Team leader, Website developer, Driver</h6>
-              <h6 class="Names J-Stejskal">Stejskal Jan - Programator, Photograph</h6>
-              <h6 class="Names B-Legeza">Legeza Bruno - Programator</h6>
-              <h6 class="Names S-Kominek">Komínek Štěpán - Engineer, Driver</h6>
-              <h6 class="Names K-Hudak">Hudák Kryštof - Engineer, Driver</h6>
-              <h6 class="Names D-Zajicek">Zajíček Dominik - Engineer, Driver</h6>
-              <h6 class="Names M-Danyi">Danyi Matěj - Driver</h6>
-              <h6 class="Names J-Konejl">Konejl Jakub - Driver</h6>
-              <h6 class="Names L-Malec">Malec Lukáš - Driver</h6>
-              <h6 class="Names J-Rotter"> Rotter Jan - Driver</h6>
-              <h6 class="Names M-Vostatek">Vostatek Matyaš - Driver</h6>
-              <h6 class="Names H-Mikulas">Hlaváček Mikuláš - Driver</h6>
-              <h6 class="Names P-Holbik">Holbík Petr - Statistic</h6>
-              <h6 class="Names O-Sak">Sak Ondřej - Photograph, Instagram administrator</h6>
-              <h6 class="Names D-Holovska">Holovská Daniela - Engineer diary writer, PR</h6>
-              <h6 class="Names V-Policer">Policer Vojta - Discord administrator</h6>
-              <h6 class="Names M-Tresnak">Třešňák Martin - Translator</h6>
-            </div>
-            <div class="Victories">
-              <h5 class="Victories-main">competitions</h5>
-              <h6 class="VIQRC CL-Lipa">VIQRC - Česká Lípa, Czech Republic: Alliance - 3th place, Skills - 10th place</h6>
-              <h6 class="VIQRC usti-nad-labem"> VIQRC - Ústí nad Labem, Czech Republic: Alliance - 1th place, Skills - 3th place</h6>
-              <h6 class="VIQRC usti-nad-labem"> Mistrovství ČR - VEX IQ Robotics competition, Czech Republic: Alliance - 2th place, Skills - 2/3th place</h6>
-            </div>
-            <div class="Aboutus">
-              <h5 class="Aboutus-main">About us</h5>
-              <h6 class="paragraph-aboutus">Our team was created on 31.10.2024. Originally there were two teams but due to lack of parts for both robots it was decided to create the team on 31.10.24'. The team was merged by combining the name Hiduri + Xbots. At ZSMS Jižní Elementary School.</h6>
-            </div>
-          <!--  <img src="assets/Robotfotko.png" class="Robotfotko">
-            <img src="assets/Robotfotko2.png" class="Robotfotko2"> -->
-            <img src="assets/podiumfotkausti.png" class="podiumfotkausti">
-        </div>
-    </section>
-    <section id="Gallery">
-    </section>
-    <section>
-        <div class="GalleryBackground">
-            <h2 class="Nadpis-G">Photo Gallery</h2>
+  <nav>
+    <div class="logo">Hiduribots</div>
+    <div class="nav-links">
+      <a href="#info">About us</a>
+      <a href="#members">Team members</a>
+      <a href="#gallery">Fotogallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-            <!--
-              Photos from 31.10.24'. 
-            -->
+  <section class="hero" id="info">
+    <div class="hero-text">
+      <h1>About us</h1>
+      <p>Our team was created on 31.10.2024. Originally there were two teams but due to lack of parts for both robots it was decided to create the team on 31.10.24'. The team was merged by combining the name Hiduri + Xbots. At ZSMS Jižní Elementary School.</p>
+    </div>
+    <div class="hero-image">
+      <img src="Assets/podiumfotkausti.png">
+    </div>
+  </section>
 
-            <div class="FT-Container">
-              <h6 class="FT-Title">31.10.2024</h6>
-              <p class="FT-paragraph">The first training session where we started from the construction of the robot. Also on this day we joined together to form a team called Hiduribots.</p>
-            </div>
+  <section class="hero reverse" id="members">
+    <div class="hero-text">
+      <h1>Team members</h1>
+      <p> Teachers - Pecková Nikola & Pechková Kateřina</p>
+      <p> Captain - Karásek Petr</p>
+      <p> Engineers - Komínek Štěpán, Hudák Kryštof, Zajíček Dominil</p>
+      <p> Drivers - Danyi Matěj, Konejl Jakub, Malec Lukáš, Rotter Jan, Vostatek Matyáš, Hlaváček Mikuláš, Hudák Kryštof</p>
+      <p> Programators - Legeza Bruno, Malec Lukáš</p>
+      <p> Others - Sak Ondřej, Policer Vojta, Holovská Daniela, Třešnák Martin, Stejskal Jan</p>
+    </div>
+    <div class="hero-image">
+      <img src="Assets/o2arena.jpg">
+    </div>
+  </section>
 
-            <div class="gal-31-10-24">
-                <div class="slideshow-container">
-                  <h1 class="Nadpis-31-10-24">31.10.2024</h1>
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 5</div>
-                      <img src="photogallery/31-10-24-1.png" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 5</div>
-                      <img src="photogallery/31-10-24-2.png" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 5</div>
-                      <img src="photogallery/31-10-24-3.png" style="width:100%">
-                      <div class="text"></div>
-                    </div>
+  <section class="hero" id="gallery">
+    <div class="hero-text">
+      <h1>Fotogallery</h1>
+      <p> VIQRC - Česká Lípa, Czech Republic: Alliance - 3th place, Skills - 10th place > <a href="https://www.facebook.com/permalink.php/?story_fbid=1118145316979905&id=100063533412337"><i class="fa-solid fa-image"></i></a></p>
+      <p> VIQRC - Ústí nad Labem, Czech Republic: Alliance - 1th place, Skills - 3th place > <a href="https://www.facebook.com/photo/?fbid=1143994624394974&set=a.505842461543530"><i class="fa-solid fa-image"></i></a></p>
+      <p> Mistrovství ČR - VEX IQ Robotics competition, Czech Republic - Alliance - 2th place, Skills - 2th place > <a href="https://www.facebook.com/photo/?fbid=1158496882944748&set=pcb.1158497182944718"><i class="fa-solid fa-image"></i></a></p>
+      <p> Adria Open VEX IQ Robotics competition Rapid Relay 2024-2025 - Alliance 3th place, Skills 7th place > <a href="https://www.facebook.com/photo/?fbid=1171378464989923&set=pcb.1171378661656570"><i class="fa-solid fa-image"></i></a></p>
+      <p> VIQRC - Czech Open 2025 (ES/MS) - Alliance - 3th place, Skills 3th place. > <a href="https://www.facebook.com/photo/?fbid=1268768595250909&set=pcb.1268768735250895"><i class="fa-solid fa-image"></i></a></p>
+    </div>
+    <div class="hero-image">
+      <img src="Assets/Robotfotkamistrak.jpeg">
+    </div>
+  </section>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 5</div>
-                        <img src="photogallery/31-10-24-4.png" style="width:100%">
-                        <div class="text"></div>
-                      </div>
-
-                      <div class="mySlides fade">
-                        <div class="numbertext">5 / 5</div>
-                        <img src="photogallery/31-10-24-5.png" style="width:100%">
-                        <div class="text"></div>
-                      </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1)">⇦</a>
-                    <a class="next" onclick="plusSlides(1)">⇨</a>
-                    
-                    </div>
-                    <br>
-                    
-                    <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span> 
-                      <span class="dot" onclick="currentSlide(2)"></span> 
-                      <span class="dot" onclick="currentSlide(3)"></span> 
-                      <span class="dot" onclick="currentSlide(4)"></span> 
-                      <span class="dot" onclick="currentSlide(5)"></span> 
-                    </div>
-            </div>
-
-            <!--
-              Photos from 7.11.24'. 
-            -->
-            <div class="ST-Container">
-              <h6 class="ST-Title">7.11.2024</h6>
-              <p class="St-paragraph">Our second training was in a very good spirit. We made progress on the robot. Overall, the training was very successful and the progress was becoming more and more visible.</p>
-            </div>
-            <div class="gal-7-11-24">
-              <div class="slideshow-container1">
-                <h1 class="Nadpis-7-11-24">7.11.2024</h1>
-                  <div class="mySlides1 fade1">
-                    <div class="numbertext1">1 / 5</div>
-                    <img src="photogallery/7-11-24-1.png" style="width:100%">
-                    <div class="text"></div>
-                  </div>
-                  
-                  <div class="mySlides1 fade1">
-                    <div class="numbertext1">2 / 5</div>
-                    <img src="photogallery/7-11-24-2.png" style="width:100%">
-                    <div class="text"></div>
-                  </div>
-                  
-                  <div class="mySlides1 fade1">
-                    <div class="numbertext1">3 / 5</div>
-                    <img src="photogallery/7-11-24-3.png" style="width:100%">
-                    <div class="text"></div>
-                  </div>
-
-                  <div class="mySlides1 fade1">
-                      <div class="numbertext1">4 / 5</div>
-                      <img src="photogallery/7-11-24-4.png" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-
-                    <div class="mySlides1 fade1">
-                      <div class="numbertext1">5 / 5</div>
-                      <img src="photogallery/7-11-24-5.png" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-                  
-                  <a class="prev1" onclick="plusSlides1(-1)">⇦</a>
-                  <a class="next1" onclick="plusSlides1(1)">⇨</a>
-                  
-                  </div>
-                  <br>
-                  
-                  <div style="text-align:center">
-                    <span class="dot1" onclick="currentSlide1(1)"></span> 
-                    <span class="dot1" onclick="currentSlide1(2)"></span> 
-                    <span class="dot1" onclick="currentSlide1(3)"></span> 
-                    <span class="dot1" onclick="currentSlide1(4)"></span> 
-                    <span class="dot1" onclick="currentSlide1(5)"></span> 
-                  </div>
-          </div>
-
-            <!--
-              Photos from 23.11.24'. 
-            -->
-            <div class="TH-Container">
-              <h6 class="TH-Title">23.11.2024</h6>
-              <p class="TH-paragraph">Our team visited the town of Litoměřice in the early morning hours. We went in order to try what it is like at the competition and how it will look like. We went through a lot of matches and got lots of useful advice with robot design. In fact, we only came to the competition with a basic version of swish. We really enjoyed the day and learned a lot of things and finally arrived back to Česká Lípa in the evening.</p>
-            </div>
-        <div class="gal-23-11-24">
-          <div class="slideshow-container2">
-            <h1 class="Nadpis-23-11-24">23.11.2024</h1>
-              <div class="mySlides2 fade2">
-                <div class="numbertext2">1 / 5</div>
-                <img src="photogallery/23-11-24-4.webp" style="width:100%">
-                <div class="text"></div>
-              </div>
-              
-              <div class="mySlides2 fade2">
-                <div class="numbertext2">2 / 5</div>
-                <img src="photogallery/23-11-24-3.webp" style="width:100%">
-                <div class="text"></div>
-              </div>
-              
-              <div class="mySlides2 fade2">
-                <div class="numbertext2">3 / 5</div>
-                <img src="photogallery/23-11-24-1.webp" style="width:100%">
-                <div class="text"></div>
-              </div>
-
-              <div class="mySlides2 fade2">
-                <div class="numbertext2">4 / 5</div>
-                <img src="photogallery/23-11-24-2.webp" style="width:100%">
-                <div class="text"></div>
-              </div>
-
-              <div class="mySlides2 fade2">
-                <div class="numbertext2">5 / 5</div>
-                <img src="photogallery/23-11-24-5.webp" style="width:100%">
-                <div class="text"></div>
-              </div>
-              
-              <a class="prev2" onclick="plusSlides2(-1)">⇦</a>
-              <a class="next2" onclick="plusSlides2(1)">⇨</a>
-              
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot2" onclick="currentSlide2(1)"></span> 
-                <span class="dot2" onclick="currentSlide2(2)"></span> 
-                <span class="dot2" onclick="currentSlide2(3)"></span> 
-                <span class="dot2" onclick="currentSlide2(4)"></span> 
-                <span class="dot2" onclick="currentSlide2(5)"></span> 
-              </div>
-      </div>
-            <!--
-              Photos from 9.11.24'.  
-            -->
-
-            <div class="TT-Container">
-              <h6 class="TT-Title">9.1.2025</h6>
-              <p class="TT-paragraph">Early in the morning and our team was mentally preparing for the upcoming competition. One half was still asleep. Finally we arrived and the whole competition was in a good spirit and we ended up in 3rd place in skills and 1st place in alliance. We finished eating and went back to Česká Lípa proud of our result but we could have done better but still the competition was very good.</p>
-            </div>
-          <div class="gal-9-1-25">
-          <div class="slideshow-container3">
-            <h1 class="Nadpis-9-1-25">9.1.2025</h1>
-              <div class="mySlides3 fade3">
-                <div class="numbertext3">1 / 5</div>
-                <img src="photogallery/9-1-25-1.png" style="width:100%">
-                <div class="text"></div>
-              </div>
-              
-              <div class="mySlides3 fade3">
-                <div class="numbertext3">2 / 5</div>
-                <img src="photogallery/9-1-25-2.png" style="width:100%">
-                <div class="text"></div>
-              </div>
-              
-              <div class="mySlides3 fade3">
-                <div class="numbertext3">3 / 5</div>
-                <img src="photogallery/9-1-25-3.png" style="width:100%">
-                <div class="text"></div>
-              </div>
-
-              <div class="mySlides3 fade3">
-                <div class="numbertext3">4 / 5</div>
-                <img src="photogallery/9-1-25-4.png" style="width:100%">
-                <div class="text"></div>
-              </div>
-
-              <div class="mySlides3 fade3">
-                <div class="numbertext3">5 / 5</div>
-                <img src="photogallery/9-1-25-5.png" style="width:100%">
-                <div class="text"></div>
-              </div>
-              
-              <a class="prev3" onclick="plusSlides3(-1)">⇦</a>
-              <a class="next3" onclick="plusSlides3(1)">⇨</a>
-              
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot3" onclick="currentSlide3(1)"></span> 
-                <span class="dot3" onclick="currentSlide3(2)"></span> 
-                <span class="dot3" onclick="currentSlide3(3)"></span> 
-                <span class="dot3" onclick="currentSlide3(4)"></span> 
-                <span class="dot3" onclick="currentSlide3(5)"></span> 
-              </div>
-
-            <!--
-              Photos from 28.1.25'.  
-            -->
-
-              <div class="p28-Container">
-                <h6 class="p28-Title">28.1.2025</h6>
-                <p class="p28-paragraph">On 28.1.2025 we had another competition and one of the most important ones. It was the Championship of the Czech Republic. We enjoyed the championship even though we did not win. Losing by one point was disappointing but it made us all the more ready for the next competition.</p>
-              </div>
-              <div class="gal-28-1-25">
-                <div class="slideshow-container4">
-                  <h1 class="Nadpis-28-1-25">28.1.2025</h1>
-                    <div class="mySlides4 fade4">
-                      <div class="numbertext4">1 / 10</div>
-                      <img src="photogallery/28-1-25-1.jpeg" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-                    
-                    <div class="mySlides4 fade4">
-                      <div class="numbertext4">2 / 10</div>
-                      <img src="photogallery/28.1-25-2.jpeg" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-                    
-                    <div class="mySlides4 fade4">
-                      <div class="numbertext4">3 / 10</div>
-                      <img src="photogallery/28-1-25-3.jpeg" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-      
-                    <div class="mySlides4 fade4">
-                      <div class="numbertext4">4 / 10</div>
-                      <img src="photogallery/28-1-25-4.jpeg" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-      
-                    <div class="mySlides4 fade4">
-                      <div class="numbertext4">5 / 10</div>
-                      <img src="photogallery/28-1-25-5.jpeg" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-
-                    <div class="mySlides4 fade4">
-                      <div class="numbertext4">6 / 10</div>
-                      <img src="photogallery/28-1-25-6.jpeg" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-
-                    <div class="mySlides4 fade4">
-                      <div class="numbertext4">7 / 10</div>
-                      <img src="photogallery/28-1-25-7.jpeg" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-
-                    <div class="mySlides4 fade4">
-                      <div class="numbertext4">8 / 10</div>
-                      <img src="photogallery/28-1-25-8.jpeg" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-
-                    <div class="mySlides4 fade4">
-                      <div class="numbertext4">9 / 10</div>
-                      <img src="photogallery/28-1-25-9.jpeg" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-
-                    <div class="mySlides4 fade4">
-                      <div class="numbertext4">10 / 10</div>
-                      <img src="photogallery/28-1-25-10.jpeg" style="width:100%">
-                      <div class="text"></div>
-                    </div>
-                    
-                    <a class="prev4" onclick="plusSlides4(-1)">⇦</a>
-                    <a class="next4" onclick="plusSlides4(1)">⇨</a>
-                    
-                    </div>
-                    <br>
-                    
-                    <div style="text-align:center">
-                      <span class="dot4" onclick="currentSlide4(1)"></span> 
-                      <span class="dot4" onclick="currentSlide4(2)"></span> 
-                      <span class="dot4" onclick="currentSlide4(3)"></span> 
-                      <span class="dot4" onclick="currentSlide4(4)"></span> 
-                      <span class="dot4" onclick="currentSlide4(5)"></span> 
-                      <span class="dot4" onclick="currentSlide4(6)"></span> 
-                      <span class="dot4" onclick="currentSlide4(7)"></span> 
-                      <span class="dot4" onclick="currentSlide4(8)"></span> 
-                      <span class="dot4" onclick="currentSlide4(9)"></span> 
-                      <span class="dot4" onclick="currentSlide4(10)"></span> 
-                    </div>
-              </div>
-    </section>
-    <section id="Contact">
-    </section>
-    <section>
-        <div class="Contact-background">
-            <h2 class="Nadpis-C">Contact</h2>
-            <a href="mailto:Peckova@zsmsjizni.cz" class="sendmail"><span>Send Email</span></a>
-            <h5 class="doesntwork">doesn't work? Write on Peckova@zsmsjizni.cz</h5>
-            <a href="https://www.instagram.com/hiduribots/" class="a-fa-instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/people/Z%C5%A0-a-M%C5%A0-Ji%C5%BEn%C3%AD/100063533412337/" class="a-fa-whatsapp"><i class="fa-brands fa-facebook"></i></a>
-    </section>
-    <section>
-        <div class="copyright-background">
-          <div class="Main-copyright">
-            <h4 class="copyright-all-right-reserved">(C) All rights reserved Hiduribots</h4>
-            <h5 class="Copyright-email">Peckova@zsmsjizni.cz</h5>
-            <h5 class="Copyright-creator">Made by Vlastovka <a href="https://github.com/Vlastovka"><i class="fa-brands fa-github"></i></a><a href="mailto:petrkar371@gmail.com"><i class="fa-solid fa-envelope"></i></a></h5>
-          </div>
-    </section>
-
-<!--
-SCRIPTS HOLD DOWN!
--->
-
-
-        <script>
-          let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-        </script>
-
-<!--
-  Slide 2
--->
-
-<script>
-let slideIndex1 = 1;
-showSlides1(slideIndex1);
-
-function plusSlides1(n1) {
-  showSlides1(slideIndex1 += n1);
-}
-
-function currentSlide1(n1) {
-  showSlides1(slideIndex1 = n1);
-}
-
-function showSlides1(n1) {
-  let i1;
-  let slides1 = document.getElementsByClassName("mySlides1");
-  let dots1 = document.getElementsByClassName("dot1");
-  if (n1 > slides1.length) {slideIndex1 = 1}    
-  if (n1 < 1) {slideIndex1 = slides1.length}
-  for (i1 = 0; i1 < slides1.length; i1++) {
-    slides1[i1].style.display = "none";  
-  }
-  for (i1 = 0; i1 < dots1.length; i1++) {
-    dots1[i1].className = dots1[i1].className.replace(" active1", "");
-  }
-  slides1[slideIndex1-1].style.display = "block";  
-  dots1[slideIndex1-1].className += " active1";
-}
-
-</script>
-
-<!--
-  Slide 3
--->
-
-
-<script>
-let slideIndex2 = 1;
-showSlides2(slideIndex2);
-
-function plusSlides2(n2) {
-  showSlides2(slideIndex2 += n2);
-}
-
-function currentSlide2(n2) {
-  showSlides2(slideIndex1 = n2);
-}
-
-function showSlides2(n2) {
-  let i2;
-  let slides2 = document.getElementsByClassName("mySlides2");
-  let dots2 = document.getElementsByClassName("dot2");
-  if (n2 > slides2.length) {slideIndex2 = 2}    
-  if (n2 < 1) {slideIndex2 = slides2.length}
-  for (i2 = 0; i2 < slides2.length; i2++) {
-    slides2[i2].style.display = "none";  
-  }
-  for (i2 = 0; i2 < dots2.length; i2++) {
-    dots2[i2].className = dots2[i2].className.replace(" active2", "");
-  }
-  slides2[slideIndex2-1].style.display = "block";  
-  dots2[slideIndex2-1].className += " active2";
-}
-</script>
-
-<!--
-SLIDE 4
--->
-
-<script>
-  let slideIndex3 = 1;
-showSlides3(slideIndex3);
-
-function plusSlides3(n3) {
-showSlides3(slideIndex3 += n3);
-}
-
-function currentSlide(n3) {
-showSlides3(slideIndex3 = n3);
-}
-
-function showSlides3(n3) {
-let i3;
-let slides3 = document.getElementsByClassName("mySlides3");
-let dots3 = document.getElementsByClassName("dot3");
-if (n3 > slides3.length) {slideIndex3 = 1}    
-if (n3 < 1) {slideIndex3 = slides3.length}
-for (i3 = 0; i3 < slides3.length; i3++) {
-slides3[i3].style.display = "none";  
-}
-for (i3 = 0; i3 < dots3.length; i3++) {
-dots3[i3].className = dots3[i3].className.replace(" active3", "");
-}
-slides3[slideIndex3-1].style.display = "block";  
-dots3[slideIndex3-1].className += " active3";
-}
-</script>
-
-<!--
-SLIDE 5
--->
-
-<script>
-  let slideIndex4 = 1;
-showSlides4(slideIndex4);
-
-function plusSlides4(n4) {
-showSlides4(slideIndex4 += n4);
-}
-
-function currentSlide(n4) {
-showSlides4(slideIndex4 = n4);
-}
-
-function showSlides4(n4) {
-let i4;
-let slides4 = document.getElementsByClassName("mySlides4");
-let dots4 = document.getElementsByClassName("dot4");
-if (n4 > slides4.length) {slideIndex4 = 1}    
-if (n4 < 1) {slideIndex4 = slides4.length}
-for (i4 = 0; i4 < slides4.length; i4++) {
-slides4[i4].style.display = "none";  
-}
-for (i4 = 0; i4 < dots4.length; i4++) {
-dots4[i4].className = dots4[i4].className.replace(" active4", "");
-}
-slides4[slideIndex4-1].style.display = "block";  
-dots4[slideIndex4-1].className += " active4";
-}
-</script>
+  <section class="hero reverse" id="Contact">
+    <div class="hero-text">
+      <h1>Contact us</h1>
+      <p>E-mail - peckova@zsmsjizni.cz</p>
+      <p>Adress - Jižní 1903, Ceska Lipa, Czech Republic</p>
+    </div>
+    <div class="hero-image">
+      <img src="Assets/Prumka foto.jpg">
+    </div>
+  </section>
+  <footer>
+    <div>&copy; Hiduribots 2024–2025</div>
+    <div class="footer-extra">
+      Created by vlastovka
+      <a href="https://github.com/vlastovka" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" class="github-icon" alt="GitHub">
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
